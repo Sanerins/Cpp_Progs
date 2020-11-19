@@ -1,5 +1,5 @@
 ﻿  8.1 Запись вещественного числа.cpp
 D:\GitHub\Cpp_Progs\8.1 Запись вещественного числа\8.1 Запись вещественного числа\8.1 Запись вещественного числа.cpp(7,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-D:\GitHub\Cpp_Progs\8.1 Запись вещественного числа\8.1 Запись вещественного числа\8.1 Запись вещественного числа.cpp(62,29): warning C4018: '<': signed/unsigned mismatch
-D:\GitHub\Cpp_Progs\8.1 Запись вещественного числа\8.1 Запись вещественного числа\8.1 Запись вещественного числа.cpp(87,29): warning C4018: '<': signed/unsigned mismatch
+D:\GitHub\Cpp_Progs\8.1 Запись вещественного числа\8.1 Запись вещественного числа\8.1 Запись вещественного числа.cpp(63,29): warning C4018: '<': signed/unsigned mismatch
+D:\GitHub\Cpp_Progs\8.1 Запись вещественного числа\8.1 Запись вещественного числа\8.1 Запись вещественного числа.cpp(88,29): warning C4018: '<': signed/unsigned mismatch
   8.1 Запись вещественного числа.vcxproj -> D:\GitHub\Cpp_Progs\8.1 Запись вещественного числа\Debug\8.1 Запись вещественного числа.exe

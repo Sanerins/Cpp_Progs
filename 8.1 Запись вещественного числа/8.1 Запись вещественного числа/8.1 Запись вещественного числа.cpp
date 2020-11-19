@@ -14,7 +14,7 @@ char numbers[] = "1234546789";
 <порядок> ::= E <знак> <целое без знака> | E <целое без знака>
 <целое без знака> ::= <цифра> | <цифра> <целое без знака>
 <цифра> ::= 0 | 1 | 2 | 3 | 4 | 5 | 6 |7 | 8 | 9
-<знак> ::= + | - 
+<знак> ::= + | -
 */
 
 void CheckLines();
@@ -50,6 +50,7 @@ void CheckLines() {
 	}
 	file.close();
 }
+
 void CheckSign(string& str) {
 	if (str.at(0) == '+' || str.at(0) == '-') {
 		str.erase(0, 1);
@@ -79,7 +80,7 @@ void CheckMantissa(string& str) {
 }
 
 void CheckOrder(string& str) {
-	if (str.length() == 0) throw "There is no order in this number";
+	if (str.length() == 0 or str.length() == 1) throw "There is no order in this number";
 	else if(str.at(0) != 'E') throw "There is no order in this number";
 	else str.erase(0, 1);
 	CheckSign(str);
