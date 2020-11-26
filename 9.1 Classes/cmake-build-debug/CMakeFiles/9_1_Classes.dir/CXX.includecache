@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/GitHub/Cpp_Progs/9.1 Classes/Array.h
+
+D:/GitHub/Cpp_Progs/9.1 Classes/MyString.h
+
+D:/GitHub/Cpp_Progs/9.1 Classes/main.cpp
+iostream
+-
+Array.h
+D:/GitHub/Cpp_Progs/9.1 Classes/Array.h
+MyString.h
+D:/GitHub/Cpp_Progs/9.1 Classes/MyString.h
+
