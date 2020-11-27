@@ -9,17 +9,17 @@ class Array{
 private:
     int _size;
     int _currSize;
-    T *array;
+    T *_array;
 
     void CheckSize() {
         if(_currSize == _size){
             int size = (int)(_size * 1.5 + 0.5);
             T *temp = new T[size];
             for(int i=0; i < _currSize; i++) {
-                temp[i] = array[i];
+                temp[i] = _array[i];
             }
-            delete array;
-            array = temp;
+            delete [] _array;
+            _array = temp;
             _size = size;
         }
     }
@@ -27,15 +27,17 @@ private:
 public:
 
     Array(int size = 5):_size(size){
-        array = new T[size];
+        _array = new T[size];
         _currSize = 0;
     }
 
     ~Array(){
-        delete array;
+        delete [] _array;
     }
 
     int Length() {return _currSize;}
+
+    int MaxLength() {return _size;}
 
     void Insert(T unit, int place = 0){
         CheckSize();
@@ -43,10 +45,10 @@ public:
             place = _currSize;
         }
         for(int i = _currSize-1; i >= place; i--){
-            array[i+1] = array[i];
+            _array[i + 1] = _array[i];
         }
         _currSize++;
-        array[place] = unit;
+        _array[place] = unit;
     }
 
     void Upend(T unit){
@@ -54,7 +56,7 @@ public:
     }
 
     T& operator[](int place){
-        return array[place];
+        return _array[place];
     }
 
 };

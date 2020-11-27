@@ -87,6 +87,12 @@
 		<Unit filename="D:/GitHub/Cpp_Progs/9.1 Classes/Array.h">
 			<Option target="9_1_Classes"/>
 		</Unit>
+		<Unit filename="D:/GitHub/Cpp_Progs/9.1 Classes/Cuisine.h">
+			<Option target="9_1_Classes"/>
+		</Unit>
+		<Unit filename="D:/GitHub/Cpp_Progs/9.1 Classes/Dish.h">
+			<Option target="9_1_Classes"/>
+		</Unit>
 		<Unit filename="D:/GitHub/Cpp_Progs/9.1 Classes/MyString.cpp">
 			<Option target="9_1_Classes"/>
 		</Unit>

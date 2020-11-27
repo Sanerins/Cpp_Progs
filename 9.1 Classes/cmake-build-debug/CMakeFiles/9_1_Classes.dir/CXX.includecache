@@ -8,13 +8,27 @@
 
 D:/GitHub/Cpp_Progs/9.1 Classes/Array.h
 
+D:/GitHub/Cpp_Progs/9.1 Classes/Cuisine.h
+
+D:/GitHub/Cpp_Progs/9.1 Classes/Dish.h
+
 D:/GitHub/Cpp_Progs/9.1 Classes/MyString.h
+iostream
+-
 
 D:/GitHub/Cpp_Progs/9.1 Classes/main.cpp
+io.h
+-
+fcntl.h
+-
 iostream
 -
 Array.h
 D:/GitHub/Cpp_Progs/9.1 Classes/Array.h
 MyString.h
 D:/GitHub/Cpp_Progs/9.1 Classes/MyString.h
+Dish.h
+D:/GitHub/Cpp_Progs/9.1 Classes/Dish.h
+Cuisine.h
+D:/GitHub/Cpp_Progs/9.1 Classes/Cuisine.h
 
