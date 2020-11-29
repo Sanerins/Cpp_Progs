@@ -12,6 +12,7 @@ string DelSpacesString(const string&);
 
 int main(int*)
 {
+	//setlocale(LC_ALL, "");
 	SetConsoleCP(1251);
 	SetConsoleOutputCP(1251);
 	string input;

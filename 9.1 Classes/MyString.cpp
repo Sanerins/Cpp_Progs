@@ -3,7 +3,7 @@
 //
 #include "MyString.h"
 
-std::wostream& operator<<(std::wostream &out, const MyString &arrStr){
+std::ostream& operator<<(std::ostream &out, const MyString &arrStr){
     out << arrStr._string;
     return out;
 }
@@ -22,14 +22,51 @@ std::wostream& operator<<(std::wostream &out, const MyString &arrStr){
 //    return in;
 //}
 
-std::wistream& operator>>(std::wistream &in, MyString &arrStr){
+std::istream& operator>>(std::istream &in, MyString &arrStr){
+    arrStr.SetLength(1);
+    arrStr[0] = '\0';
     while(in.peek()){
-        wchar_t c;
-        c = in.get();
+        char c;
+        in.get(c);
         arrStr.Upend(c);
-        //std::cout << c;
         if(in.peek()=='\n') break;
     }
+    in.get();
     //std::cout << "Hooray!";
     return in;
+}
+
+MyString operator+(MyString& a, MyString& b){
+    MyString c;
+    int size = 0;
+    int maxSize = a.MaxLength() + b.MaxLength();
+    c._string = new char[maxSize];
+    for(int i=0; i < a.Length()-1; i++){
+        c._string[size]=a[i];
+        size++;
+    }
+    for(int i=0; i < b.Length()-1; i++){
+        c._string[size]=b[i];
+        size++;
+    }
+    c._currSize = size;
+    c._size=maxSize;
+    return c;
+}
+
+bool MyString::operator==(MyString &a){
+    return *this == a;
+}
+
+MyString operator+(MyString& a, const char* b){
+    int len = 1;
+    const char* temp = b;
+    while(*b){
+        len++;
+        b++;
+    }
+    for(int i = 0; i < len; i++){
+        a.Upend(temp[i]);
+    }
+    return a;
 }

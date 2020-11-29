@@ -3,7 +3,7 @@
 //
 #ifndef INC_9_1_CLASSES_ARRAY_H
 #define INC_9_1_CLASSES_ARRAY_H
-
+#include "MyString.h"
 template <typename T>
 class Array{
 private:
@@ -32,14 +32,14 @@ public:
     }
 
     ~Array(){
-        delete [] _array;
+        //delete [] _array;
     }
 
     int Length() {return _currSize;}
 
     int MaxLength() {return _size;}
 
-    void Insert(T unit, int place = 0){
+    void Insert(T &unit, int place = 0){
         CheckSize();
         if(place > _currSize){
             place = _currSize;
@@ -51,8 +51,59 @@ public:
         _array[place] = unit;
     }
 
-    void Upend(T unit){
+    void Upend(T &unit){
         Insert(unit, _currSize);
+    }
+
+    T& FindTextInArray(MyString m){
+        for(int i = 0; i < _currSize; i++){
+            if (_array[i] == m) return _array[i];
+        }
+        T unit;
+        unit = m;
+        Upend(unit);
+        return _array[_currSize-1];
+    }
+
+    T& FindMax(){
+        T max = _array[0];
+        int num = 0;
+        for(int i = 1; i < _currSize; i++){
+            if (max<_array[i]) {
+                num = i;
+                max = _array[i];
+            }
+        }
+        return _array[num];
+    }
+
+    T& FindMin(){
+        T min = _array[0];
+        int num = 0;
+        for(int i = 1; i < _currSize; i++){
+            if (min>_array[i]) {
+                num = i;
+                min = _array[i];
+            }
+        }
+        return _array[num];
+    }
+
+    void Sort(){
+        T temp;
+        for(int i = 0; i<_currSize; i++){
+            temp = _array[i];
+            T min = _array[i];
+            int iMin = i;
+            for(int j = i+1; j < _currSize; j++){
+                if(min>_array[j]) {
+                    min = _array[j];
+                    iMin = j;
+                }
+            }
+            _array[i] = min;
+            _array[iMin] = temp;
+        }
     }
 
     T& operator[](int place){
