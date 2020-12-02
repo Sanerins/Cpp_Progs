@@ -61,8 +61,8 @@ public:
         }
         T unit;
         unit = m;
-        Upend(unit);
-        return _array[_currSize-1];
+        Insert(unit);
+        return _array[0];
     }
 
     T& FindMax(){
@@ -104,6 +104,16 @@ public:
             _array[i] = min;
             _array[iMin] = temp;
         }
+    }
+
+    Array& operator=(const Array& str){
+        this->_size = str._size;
+        this->_currSize = str._currSize;
+        _array = new T [_size];
+        for(int i = 0; i < _currSize; i++){
+            this->_array[i] = str._array[i];
+        }
+        return *this;
     }
 
     T& operator[](int place){

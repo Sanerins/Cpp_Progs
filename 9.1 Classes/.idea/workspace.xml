@@ -44,11 +44,6 @@
     <property name="settings.editor.selected.configurable" value="CPPToolchains" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="9_1_Classes" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="9_1_Classes" TARGET_NAME="9_1_Classes" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="9_1_Classes" RUN_TARGET_NAME="9_1_Classes">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -84,6 +79,10 @@
       <workItem from="1606553434086" duration="27000" />
       <workItem from="1606576034513" duration="12006000" />
       <workItem from="1606669674333" duration="7878000" />
+      <workItem from="1606738214434" duration="11009000" />
+      <workItem from="1606753630635" duration="4366000" />
+      <workItem from="1606771256125" duration="8537000" />
+      <workItem from="1606806600482" duration="2621000" />
     </task>
     <servers />
   </component>
@@ -107,49 +106,56 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1061" y="456" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1606553456053" />
-    <state width="2517" height="279" key="GridCell.Tab.0.bottom" timestamp="1606682215334">
+    <state width="2517" height="75" key="GridCell.Tab.0.bottom" timestamp="1606811689236">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="279" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1606682215334" />
-    <state width="2517" height="279" key="GridCell.Tab.0.center" timestamp="1606682215334">
+    <state width="2517" height="75" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1606811689236" />
+    <state width="2517" height="75" key="GridCell.Tab.0.center" timestamp="1606811689236">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="279" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1606682215334" />
-    <state width="2517" height="279" key="GridCell.Tab.0.left" timestamp="1606682215334">
+    <state width="2517" height="75" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1606811689236" />
+    <state width="2517" height="75" key="GridCell.Tab.0.left" timestamp="1606811689236">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="279" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1606682215334" />
-    <state width="2517" height="279" key="GridCell.Tab.0.right" timestamp="1606682215334">
+    <state width="2517" height="75" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1606811689236" />
+    <state width="2517" height="75" key="GridCell.Tab.0.right" timestamp="1606811689236">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="279" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1606682215334" />
-    <state width="2517" height="355" key="GridCell.Tab.1.bottom" timestamp="1606682215331">
+    <state width="2517" height="75" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1606811689236" />
+    <state width="2517" height="75" key="GridCell.Tab.1.bottom" timestamp="1606811689236">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="355" key="GridCell.Tab.1.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1606682215331" />
-    <state width="2517" height="355" key="GridCell.Tab.1.center" timestamp="1606682215331">
+    <state width="2517" height="75" key="GridCell.Tab.1.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1606811689236" />
+    <state width="2517" height="75" key="GridCell.Tab.1.center" timestamp="1606811689236">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="355" key="GridCell.Tab.1.center/0.0.2560.1400@0.0.2560.1400" timestamp="1606682215331" />
-    <state width="2517" height="355" key="GridCell.Tab.1.left" timestamp="1606682215331">
+    <state width="2517" height="75" key="GridCell.Tab.1.center/0.0.2560.1400@0.0.2560.1400" timestamp="1606811689236" />
+    <state width="2517" height="75" key="GridCell.Tab.1.left" timestamp="1606811689236">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="355" key="GridCell.Tab.1.left/0.0.2560.1400@0.0.2560.1400" timestamp="1606682215331" />
-    <state width="2517" height="355" key="GridCell.Tab.1.right" timestamp="1606682215331">
+    <state width="2517" height="75" key="GridCell.Tab.1.left/0.0.2560.1400@0.0.2560.1400" timestamp="1606811689236" />
+    <state width="2517" height="75" key="GridCell.Tab.1.right" timestamp="1606811689236">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="355" key="GridCell.Tab.1.right/0.0.2560.1400@0.0.2560.1400" timestamp="1606682215331" />
+    <state width="2517" height="75" key="GridCell.Tab.1.right/0.0.2560.1400@0.0.2560.1400" timestamp="1606811689236" />
     <state x="637" y="360" width="1135" height="919" key="SettingsEditor" timestamp="1606679045782">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="637" y="360" width="1135" height="919" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1606679045782" />
-    <state x="1057" y="486" key="refactoring.ChangeSignatureDialog" timestamp="1606416288534">
+    <state x="1233" y="609" key="refactoring.ChangeSignatureDialog" timestamp="1606777284614">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1057" y="486" key="refactoring.ChangeSignatureDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1606416288534" />
-    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1606677525003">
+    <state x="1233" y="609" key="refactoring.ChangeSignatureDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1606777284614" />
+    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1606747411380">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1606677525003" />
+    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1606747411380" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="CMakeRunConfiguration">
+        <watch expression="this-&gt;_array-&gt;_name" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

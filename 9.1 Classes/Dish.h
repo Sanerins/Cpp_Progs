@@ -45,11 +45,11 @@ public:
 
     ~Dish(){};
 
-    const MyString &getName() const {
+    MyString &getName() {
         return _name;
     }
 
-    void setName(const MyString &name) {
+    void setName(MyString &name) {
         _name = name;
     }
 
@@ -65,7 +65,7 @@ public:
         return _cuisine;
     }
 
-    void setCuisine(const MyString &cuisine) {
+    void setCuisine(MyString &cuisine) {
         _cuisine = cuisine;
     }
 

@@ -16,18 +16,21 @@ public:
 
     Cuisine(){
         _name = "NULL";
+        _row = 'A';
     }
 
-    Cuisine(MyString name):_name(_name){};
+    Cuisine(MyString name):_name(_name){
+        _row = 'A';
+    };
 
     ~Cuisine(){
     }
 
-    const MyString &getName() const {
+    MyString &getName() {
         return _name;
     }
 
-    void setName(const MyString &name) {
+    void setName(MyString &name) {
         _name = name;
     }
 
@@ -39,7 +42,7 @@ public:
         _row = row;
     }
 
-    const Array<Dish> &getDishes() const {
+    Array<Dish> &getDishes() {
         return _Dishes;
     }
 
@@ -53,6 +56,13 @@ public:
 
     Cuisine& operator=(MyString &c){
         this->_name = c;
+        return *this;
+    }
+
+    Cuisine& operator=(Cuisine &c){
+        this->_name = c._name;
+        this->_row = c._row;
+        this->_Dishes = c._Dishes;
         return *this;
     }
 
@@ -71,6 +81,8 @@ public:
     bool operator&&(Cuisine &a);
 
     bool operator||(Cuisine &a);
+
+    friend std::ostream& operator<<(std::ostream &out, const Cuisine &cuisine);
 
 };
 

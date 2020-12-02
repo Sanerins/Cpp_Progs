@@ -35,3 +35,8 @@ bool Cuisine::operator&&(Cuisine &a){
 bool Cuisine::operator||(Cuisine &a){
     return this->_Dishes.Length()||a._Dishes.Length();
 }
+
+std::ostream& operator<<(std::ostream &out, const Cuisine &cuisine){
+    out << cuisine._name;
+    return out;
+}

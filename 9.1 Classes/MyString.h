@@ -64,6 +64,16 @@ public:
         return *this;
     }
 
+    MyString& operator=(const MyString& str){
+        this->_size = str._size;
+        this->_currSize = str._currSize;
+        _string = new char[_size];
+        for(int i = 0; i < _currSize; i++){
+            this->_string[i] = str._string[i];
+        }
+        return *this;
+    }
+
     MyString& operator+=(MyString a){
         int size = 0;
         int maxSize = a.MaxLength() + this->MaxLength();

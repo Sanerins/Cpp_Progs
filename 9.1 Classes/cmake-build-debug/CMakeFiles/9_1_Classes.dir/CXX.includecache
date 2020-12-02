@@ -10,10 +10,6 @@ D:/GitHub/Cpp_Progs/9.1 Classes/Array.h
 MyString.h
 D:/GitHub/Cpp_Progs/9.1 Classes/MyString.h
 
-D:/GitHub/Cpp_Progs/9.1 Classes/Cuisine.cpp
-Cuisine.h
-D:/GitHub/Cpp_Progs/9.1 Classes/Cuisine.h
-
 D:/GitHub/Cpp_Progs/9.1 Classes/Cuisine.h
 Dish.h
 D:/GitHub/Cpp_Progs/9.1 Classes/Dish.h
@@ -30,6 +26,8 @@ iostream
 
 D:/GitHub/Cpp_Progs/9.1 Classes/main.cpp
 windows.h
+-
+iomanip
 -
 Array.h
 D:/GitHub/Cpp_Progs/9.1 Classes/Array.h

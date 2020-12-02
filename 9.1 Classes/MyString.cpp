@@ -55,7 +55,11 @@ MyString operator+(MyString& a, MyString& b){
 }
 
 bool MyString::operator==(MyString &a){
-    return *this == a;
+    if (this->_currSize!=a._currSize) return false;
+    for(int i = 0; i<_currSize; i++){
+        if(this->_string[i] != a._string[i]) return false;
+    }
+    return true;
 }
 
 MyString operator+(MyString& a, const char* b){
