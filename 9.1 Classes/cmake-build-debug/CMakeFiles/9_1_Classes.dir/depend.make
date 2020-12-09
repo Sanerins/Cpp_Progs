@@ -17,6 +17,7 @@ CMakeFiles/9_1_Classes.dir/MyString.cpp.obj: ../MyString.h
 CMakeFiles/9_1_Classes.dir/main.cpp.obj: ../Array.h
 CMakeFiles/9_1_Classes.dir/main.cpp.obj: ../Cuisine.h
 CMakeFiles/9_1_Classes.dir/main.cpp.obj: ../Dish.h
+CMakeFiles/9_1_Classes.dir/main.cpp.obj: ../Exceptions.h
 CMakeFiles/9_1_Classes.dir/main.cpp.obj: ../MyString.h
 CMakeFiles/9_1_Classes.dir/main.cpp.obj: ../main.cpp
 
