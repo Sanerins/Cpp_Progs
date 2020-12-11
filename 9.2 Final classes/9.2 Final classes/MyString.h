@@ -119,6 +119,8 @@ public:
 
     void DelSpaces();
 
+    void ChangeSpaces();
+
     friend std::ostream& operator<<(std::ostream &out, const MyString &arrStr);
 
     friend std::istream& operator>>(std::istream &in, MyString &arrStr);

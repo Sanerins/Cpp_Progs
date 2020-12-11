@@ -39,6 +39,15 @@ void MyString::DelSpaces() {
     }
 }
 
+void MyString::ChangeSpaces() {
+    this->DelSpaces();
+    for(int i = 0; i <this->Length(); i++){
+        if(_string[i] == ' ') {
+            _string[i] = '_';
+        }
+    }
+}
+
 std::istream& operator>>(std::istream &in, MyString &arrStr){
     arrStr.SetLength(1);
     arrStr[0] = '\0';

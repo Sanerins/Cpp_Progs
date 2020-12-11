@@ -28,10 +28,6 @@ void WriteTable(Array<Cuisine> &cuisines);
 
 void SaveMenu(Array<Cuisine> &cuisines);
 
-//Функции FindMin и FindMax присутствуют и работают, находятся в Array.h Не были использованы в программе по причине
-//Отсутствия необходимости в их использовании. В задании указано необходимость применить к массиву лишь
-// функцию сортировки, что я, конечно, делаю.
-
 void ShowMax(Array<Cuisine> &cuisines);
 
 void ShowMin(Array<Cuisine> &cuisines);
@@ -73,6 +69,7 @@ int main() {
                 case (1):
                     cin >> dish;
                     if(cin.fail()) throw BadDish();
+                    if(dish.getCalories() <= 0 or dish.getCookingTime() <= 0) throw NegativeNumInDish();
                     AddToCuisine(cuisines, dish);
                     break;
                 case (2):
@@ -108,6 +105,15 @@ int main() {
             cout << problem.Text();
             std::cin.clear();
             std::cin.ignore(std::numeric_limits < std::streamsize > ::max(), '\n');
+        }
+        catch(NegativeNumInDish problem){
+            i = 1;
+            input = 0;
+            cout << problem.Text();
+            if(cin.fail()) {
+                std::cin.clear();
+                std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+            }
         }
         catch(BadFile problem){
             i = 1;
@@ -322,6 +328,7 @@ void WriteTable(Array<Cuisine> &cuisines) {
     cin >> filename;
     if(cin.fail()
     or filename == "saves") throw BadFile();
+    filename.ChangeSpaces();
     table.open((filename+".txt").GetCharList());
     cout << "Файл создан, начинаю процесс заполнения..." << endl;
     int space = 26;

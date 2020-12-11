@@ -26,4 +26,10 @@ struct BadFile : public std::exception {
     }
 };
 
+struct NegativeNumInDish : public std::exception {
+    MyString Text() throw(){
+        return "Калорийность и время приготовления блюда должны быть выше 0!\n";
+    }
+};
+
 #endif //INC_9_1_CLASSES_EXCEPTIONS_H
