@@ -1,3 +1,0 @@
-D:/GitHub/Cpp_Progs/9.1 Classes/out/build/x64-Debug (default)/CMakeFiles/9_1_Classes.dir
-D:/GitHub/Cpp_Progs/9.1 Classes/out/build/x64-Debug (default)/CMakeFiles/edit_cache.dir
-D:/GitHub/Cpp_Progs/9.1 Classes/out/build/x64-Debug (default)/CMakeFiles/rebuild_cache.dir

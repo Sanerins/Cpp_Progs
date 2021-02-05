@@ -1,3 +1,0 @@
-"D:\CLion 2020.2.4\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\0_2_ClionTest.dir/objects.a
-C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\ar.exe cr CMakeFiles\0_2_ClionTest.dir/objects.a @CMakeFiles\0_2_ClionTest.dir\objects1.rsp
-C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE -g   -Wl,--whole-archive CMakeFiles\0_2_ClionTest.dir/objects.a -Wl,--no-whole-archive  -o 0_2_ClionTest.exe -Wl,--out-implib,lib0_2_ClionTest.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\0_2_ClionTest.dir\linklibs.rsp

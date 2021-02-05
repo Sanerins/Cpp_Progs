@@ -1,0 +1,3 @@
+D:/GitHub/Cpp_Progs/0.2 ClionTest/cmake-build-debug/CMakeFiles/0_2_ClionTest.dir
+D:/GitHub/Cpp_Progs/0.2 ClionTest/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/GitHub/Cpp_Progs/0.2 ClionTest/cmake-build-debug/CMakeFiles/rebuild_cache.dir

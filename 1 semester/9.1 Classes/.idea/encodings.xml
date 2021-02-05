@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="windows-1251">
+    <file url="file://$PROJECT_DIR$/Array.h" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/Cuisine.h" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/Dish.h" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/MyString.cpp" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/MyString.h" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/cmake-build-debug/saves.txt" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/main.cpp" charset="windows-1251" />
+  </component>
+</project>

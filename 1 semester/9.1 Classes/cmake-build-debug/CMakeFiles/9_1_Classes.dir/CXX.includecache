@@ -1,0 +1,52 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/GitHub/Cpp_Progs/9.1 Classes/Array.h
+MyString.h
+D:/GitHub/Cpp_Progs/9.1 Classes/MyString.h
+
+D:/GitHub/Cpp_Progs/9.1 Classes/Cuisine.h
+Dish.h
+D:/GitHub/Cpp_Progs/9.1 Classes/Dish.h
+Array.h
+D:/GitHub/Cpp_Progs/9.1 Classes/Array.h
+
+D:/GitHub/Cpp_Progs/9.1 Classes/Dish.h
+MyString.h
+D:/GitHub/Cpp_Progs/9.1 Classes/MyString.h
+
+D:/GitHub/Cpp_Progs/9.1 Classes/Exceptions.h
+exception
+-
+MyString.h
+D:/GitHub/Cpp_Progs/9.1 Classes/MyString.h
+
+D:/GitHub/Cpp_Progs/9.1 Classes/MyString.h
+iostream
+-
+fstream
+-
+
+D:/GitHub/Cpp_Progs/9.1 Classes/main.cpp
+windows.h
+-
+iomanip
+-
+fstream
+-
+Array.h
+D:/GitHub/Cpp_Progs/9.1 Classes/Array.h
+MyString.h
+D:/GitHub/Cpp_Progs/9.1 Classes/MyString.h
+Dish.h
+D:/GitHub/Cpp_Progs/9.1 Classes/Dish.h
+Cuisine.h
+D:/GitHub/Cpp_Progs/9.1 Classes/Cuisine.h
+Exceptions.h
+D:/GitHub/Cpp_Progs/9.1 Classes/Exceptions.h
+
