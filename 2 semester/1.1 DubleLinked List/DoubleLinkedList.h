@@ -18,13 +18,14 @@ private:
 
         // Конструктор для создания нового элемента списка. 
         Node(int item, Node* next = nullptr, Node* prev = nullptr) : item_(item), next_(next), prev_(prev) { }
+
     };
 
     int count_;         // счетчик числа элементов
     Node* head_;        // первый элемент списка
     Node* tail_;        // последний элемент списка
 
-  // Доступ к головному узлу списка
+    // Доступ к головному узлу списка
     Node* head() const { return head_; }
 
     // Доступ к хвостовому узлу списка
@@ -36,10 +37,7 @@ private:
     // Вставить сформированный узел в начало списка
     void insertHead(Node* x); // (int item);
 
-    // Вставить лист в конец списка
-    void insertList(DoubleLinkedList* src);
-
-  // Удаление заданного узла 
+    // Удаление заданного узла
     void deleteNode(Node* x);
 
     // Поиск узла (адрес) с заданным значением  
@@ -55,6 +53,9 @@ public:
 
     // Конструктор "копирования" – создание копии имеющегося списка
     DoubleLinkedList(const DoubleLinkedList& src);
+
+    // Конструктор "перемещения" – создание копии имеющегося списка
+    DoubleLinkedList(DoubleLinkedList&& src);
 
     // количество элементов списка
     int count()const { return count_; }
@@ -73,6 +74,9 @@ public:
     // Вставить элемент в хвост списка
     void insertTail(int item);
 
+    // Вставить лист в конец списка
+    void insertList(DoubleLinkedList& src);
+
     // Удалить элемент с головы списка
     bool deleteHead();
 
@@ -86,7 +90,7 @@ public:
     bool searchItem(int item);
 
     // Замена информации узла на новое 
-    bool replaceItem(int itemOld, int itemNew, const bool all);
+    bool replaceItem(int itemOld, int itemNew, const bool all = 0);
 
     // Вывод элементов списка в текстовом виде в стандартный выходной поток 
     void outAll();
@@ -94,19 +98,23 @@ public:
     //Оператор копирующего присваивания
     DoubleLinkedList& operator= (const DoubleLinkedList &src);
 
+    //Метод для copy and swap алгоритма
+    void swap(DoubleLinkedList &src);
+
     //Оператор перемещающего присваивания
     DoubleLinkedList& operator= (DoubleLinkedList &&src);
 
     //Оператор вывода списка
-
     friend std::ostream& operator<<(std::ostream& out, DoubleLinkedList& src);
 
     //Оператор сравнения списков
-
     bool operator==(const DoubleLinkedList &src);
 
     // Деструктор списка	
     virtual ~DoubleLinkedList();
+
+    //Метод очистки для переноса
+    void purify();
 };
 #endif
 

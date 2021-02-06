@@ -54,19 +54,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /app/extra/clion/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /home/sanerin/clion-2020.3.2/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /app/extra/clion/bin/cmake/linux/bin/cmake -E rm -f
+RM = /home/sanerin/clion-2020.3.2/bin/cmake/linux/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/sanerin/GitHub/Cpp_progs/Cpp_Progs/2 semester/1.1 DubleLinked List"
+CMAKE_SOURCE_DIR = "/home/sanerin/GitHub/Cpp_Progs/2 semester/1.1 DubleLinked List"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/sanerin/GitHub/Cpp_progs/Cpp_Progs/2 semester/1.1 DubleLinked List/cmake-build-debug"
+CMAKE_BINARY_DIR = "/home/sanerin/GitHub/Cpp_Progs/2 semester/1.1 DubleLinked List/cmake-build-debug"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/DoubleLinked.dir/depend.make
@@ -79,29 +79,29 @@ include CMakeFiles/DoubleLinked.dir/flags.make
 
 CMakeFiles/DoubleLinked.dir/main.cpp.o: CMakeFiles/DoubleLinked.dir/flags.make
 CMakeFiles/DoubleLinked.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/sanerin/GitHub/Cpp_progs/Cpp_Progs/2 semester/1.1 DubleLinked List/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/DoubleLinked.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DoubleLinked.dir/main.cpp.o -c "/home/sanerin/GitHub/Cpp_progs/Cpp_Progs/2 semester/1.1 DubleLinked List/main.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/sanerin/GitHub/Cpp_Progs/2 semester/1.1 DubleLinked List/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/DoubleLinked.dir/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DoubleLinked.dir/main.cpp.o -c "/home/sanerin/GitHub/Cpp_Progs/2 semester/1.1 DubleLinked List/main.cpp"
 
 CMakeFiles/DoubleLinked.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DoubleLinked.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/sanerin/GitHub/Cpp_progs/Cpp_Progs/2 semester/1.1 DubleLinked List/main.cpp" > CMakeFiles/DoubleLinked.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/sanerin/GitHub/Cpp_Progs/2 semester/1.1 DubleLinked List/main.cpp" > CMakeFiles/DoubleLinked.dir/main.cpp.i
 
 CMakeFiles/DoubleLinked.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DoubleLinked.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/sanerin/GitHub/Cpp_progs/Cpp_Progs/2 semester/1.1 DubleLinked List/main.cpp" -o CMakeFiles/DoubleLinked.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/sanerin/GitHub/Cpp_Progs/2 semester/1.1 DubleLinked List/main.cpp" -o CMakeFiles/DoubleLinked.dir/main.cpp.s
 
 CMakeFiles/DoubleLinked.dir/DoubleLinkedList.cpp.o: CMakeFiles/DoubleLinked.dir/flags.make
 CMakeFiles/DoubleLinked.dir/DoubleLinkedList.cpp.o: ../DoubleLinkedList.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/sanerin/GitHub/Cpp_progs/Cpp_Progs/2 semester/1.1 DubleLinked List/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/DoubleLinked.dir/DoubleLinkedList.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DoubleLinked.dir/DoubleLinkedList.cpp.o -c "/home/sanerin/GitHub/Cpp_progs/Cpp_Progs/2 semester/1.1 DubleLinked List/DoubleLinkedList.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/sanerin/GitHub/Cpp_Progs/2 semester/1.1 DubleLinked List/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/DoubleLinked.dir/DoubleLinkedList.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DoubleLinked.dir/DoubleLinkedList.cpp.o -c "/home/sanerin/GitHub/Cpp_Progs/2 semester/1.1 DubleLinked List/DoubleLinkedList.cpp"
 
 CMakeFiles/DoubleLinked.dir/DoubleLinkedList.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DoubleLinked.dir/DoubleLinkedList.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/sanerin/GitHub/Cpp_progs/Cpp_Progs/2 semester/1.1 DubleLinked List/DoubleLinkedList.cpp" > CMakeFiles/DoubleLinked.dir/DoubleLinkedList.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/sanerin/GitHub/Cpp_Progs/2 semester/1.1 DubleLinked List/DoubleLinkedList.cpp" > CMakeFiles/DoubleLinked.dir/DoubleLinkedList.cpp.i
 
 CMakeFiles/DoubleLinked.dir/DoubleLinkedList.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DoubleLinked.dir/DoubleLinkedList.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/sanerin/GitHub/Cpp_progs/Cpp_Progs/2 semester/1.1 DubleLinked List/DoubleLinkedList.cpp" -o CMakeFiles/DoubleLinked.dir/DoubleLinkedList.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/sanerin/GitHub/Cpp_Progs/2 semester/1.1 DubleLinked List/DoubleLinkedList.cpp" -o CMakeFiles/DoubleLinked.dir/DoubleLinkedList.cpp.s
 
 # Object files for target DoubleLinked
 DoubleLinked_OBJECTS = \
@@ -115,7 +115,7 @@ DoubleLinked: CMakeFiles/DoubleLinked.dir/main.cpp.o
 DoubleLinked: CMakeFiles/DoubleLinked.dir/DoubleLinkedList.cpp.o
 DoubleLinked: CMakeFiles/DoubleLinked.dir/build.make
 DoubleLinked: CMakeFiles/DoubleLinked.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/sanerin/GitHub/Cpp_progs/Cpp_Progs/2 semester/1.1 DubleLinked List/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable DoubleLinked"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/sanerin/GitHub/Cpp_Progs/2 semester/1.1 DubleLinked List/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable DoubleLinked"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/DoubleLinked.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -128,6 +128,6 @@ CMakeFiles/DoubleLinked.dir/clean:
 .PHONY : CMakeFiles/DoubleLinked.dir/clean
 
 CMakeFiles/DoubleLinked.dir/depend:
-	cd "/home/sanerin/GitHub/Cpp_progs/Cpp_Progs/2 semester/1.1 DubleLinked List/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/sanerin/GitHub/Cpp_progs/Cpp_Progs/2 semester/1.1 DubleLinked List" "/home/sanerin/GitHub/Cpp_progs/Cpp_Progs/2 semester/1.1 DubleLinked List" "/home/sanerin/GitHub/Cpp_progs/Cpp_Progs/2 semester/1.1 DubleLinked List/cmake-build-debug" "/home/sanerin/GitHub/Cpp_progs/Cpp_Progs/2 semester/1.1 DubleLinked List/cmake-build-debug" "/home/sanerin/GitHub/Cpp_progs/Cpp_Progs/2 semester/1.1 DubleLinked List/cmake-build-debug/CMakeFiles/DoubleLinked.dir/DependInfo.cmake" --color=$(COLOR)
+	cd "/home/sanerin/GitHub/Cpp_Progs/2 semester/1.1 DubleLinked List/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/sanerin/GitHub/Cpp_Progs/2 semester/1.1 DubleLinked List" "/home/sanerin/GitHub/Cpp_Progs/2 semester/1.1 DubleLinked List" "/home/sanerin/GitHub/Cpp_Progs/2 semester/1.1 DubleLinked List/cmake-build-debug" "/home/sanerin/GitHub/Cpp_Progs/2 semester/1.1 DubleLinked List/cmake-build-debug" "/home/sanerin/GitHub/Cpp_Progs/2 semester/1.1 DubleLinked List/cmake-build-debug/CMakeFiles/DoubleLinked.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : CMakeFiles/DoubleLinked.dir/depend
 

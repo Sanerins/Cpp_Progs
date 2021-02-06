@@ -6,8 +6,35 @@
 // Конструктор "по умолчанию" - создание пустого списка - см. Описание класса
 // DoubleLinkedList::DoubleLinkedList(): count_(0), head_(nullptr), tail_(nullptr) {  }
 
-// Конструктор "копирования" – создание копии имеющегося списка
- // DoubleLinkedList::DoubleLinkedList (const DoubleLinkedList::DoubleLinkedList & src) {}
+//Конструктор копирования, создание копии списка
+ DoubleLinkedList::DoubleLinkedList (const DoubleLinkedList &src) {
+    if(!src.head_){
+        count_ = 0;
+        head_ = nullptr;
+        tail_ = nullptr;
+        return;
+    }
+    count_ = 0;
+    head_ = new Node(src.head_->item_);
+    tail_ = nullptr;
+    Node* current = head_;
+    Node* srcCurrent = src.head_;
+    for(int i = 1; i < src.count_; i++){
+        current->next_ = new Node(srcCurrent->next_->item_);
+        current->next_->prev_ = current;
+        current = current->next_;
+        srcCurrent = srcCurrent ->next_;
+    }
+    tail_ = current;
+    count_ = src.count_;
+    return;
+}
+
+//Конструктор перемещения, создание одного, не сохранения другого
+ DoubleLinkedList::DoubleLinkedList(DoubleLinkedList&& src): count_(src.count_), head_(src.head_), tail_(src.tail_) {
+    src.head_ = nullptr;
+    src.tail_ = nullptr;
+}
 
 // Вставить сформированный узел в хвост списка
 void DoubleLinkedList::insertTail(Node* x) 
@@ -35,8 +62,28 @@ void DoubleLinkedList::insertHead(Node* x)
 	count_++;  // число элементов списка увеличилось
 }
 
-void DoubleLinkedList::insertList(DoubleLinkedList* src){
-
+//Вставка узлов другого списка в первый список путем перемещения
+void DoubleLinkedList::insertList(DoubleLinkedList& src){
+//    for(int i = 0; i < src->count_; i++){
+//        insertTail(src->head_);
+//        src->deleteHead();
+//    }
+    if(src.head_ == nullptr){
+        return;
+    }
+    else if(head_ == nullptr){
+        swap(src);
+        return;
+    }
+    else {
+        src.head_->prev_ = tail_;
+        tail_->next_ = src.head_;
+        src.head_ = nullptr;
+        tail_ = src.tail_;
+        src.tail_ = nullptr;
+        count_ += src.count_;
+        src.count_ = 0;
+    }
 }
 
 // Удаление заданного узла 
@@ -83,7 +130,7 @@ DoubleLinkedList::Node* DoubleLinkedList::replaceNode(DoubleLinkedList::Node* x,
 }
 
 // количество элементов списка
-//  int DoubleLinkedList::сount()const{ return count_; }
+//  int DoubleLinkedList::count()const{ return count_; }
 
 // Доступ к информации головного узла списка
 int DoubleLinkedList::headItem() const
@@ -185,13 +232,11 @@ bool DoubleLinkedList::replaceItem(const int itemOld,const int itemNew, const bo
     if(searchItem(itemOld)){
         if(all){
             while(searchItem(itemOld)){
-                Node *x = searchNode(itemOld);
-                deleteNode(x);
+                replaceNode(searchNode(itemOld), itemNew);
             }
         }
         else {
-            Node *x = searchNode(itemOld);
-            deleteNode(x);
+            replaceNode(searchNode(itemOld), itemNew);
         }
         return 1;
     }
@@ -223,29 +268,66 @@ DoubleLinkedList::~DoubleLinkedList()
 	}
 }
 
+void DoubleLinkedList::purify()
+{
+    Node* current = nullptr;   // указатель на элемент, подлежащий удалению
+    Node* next = head_;        // указатель на следующий элемент
+    while (next != nullptr) {  // пока есть еще элементы в списке
+        current = next;
+        next = next->next_;    // переход к следующему элементу
+        delete current;        // освобождение памяти
+    }
+}
+
 //Оператор копирующего присваивания
 DoubleLinkedList& DoubleLinkedList::operator= (const DoubleLinkedList &src){
-
+    if(*this == src){
+        return *this;
+    }
+    else{
+        DoubleLinkedList tempList(src);
+        swap(tempList);
+        return *this;
+    }
+}
+//Метод для copy and swap алгоритма
+void DoubleLinkedList::swap(DoubleLinkedList &src) {
+    Node* tempHead = head_;
+    Node* tempTail = tail_;
+    int tempCount = count_;
+    head_ = src.head_;
+    tail_ = src.tail_;
+    count_ = src.count_;
+    src.head_ = tempHead;
+    src.tail_ = tempTail;
+    src.count_ = tempCount;
 }
 
 //Оператор перемещающего присваивания
 DoubleLinkedList& DoubleLinkedList::operator= (DoubleLinkedList &&src){
-
+    if(head_ != nullptr){
+        purify();
+    }
+    head_ = src.head_;
+    tail_ = src.tail_;
+    count_ = src.count_;
+    src.head_ = nullptr;
+    src.tail_ = nullptr;
+    return *this;
 }
 
 //Оператор вывода списка
-
 std::ostream& operator<<(std::ostream& out, DoubleLinkedList& src){
     DoubleLinkedList::Node* x = src.head_;
     while (x != nullptr){
         out << x->item_ << " ";
+        x = x->next_;
     }
-    out << " ";
+    out << "\n";
     return out;
 }
 
 //Оператор сравнения списков
-
 bool DoubleLinkedList::operator==(const DoubleLinkedList &src){
     Node* x = head_;
     Node* y = src.head_;

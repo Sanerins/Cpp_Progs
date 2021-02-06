@@ -1,0 +1,2 @@
+main.o: main.cpp DoubleLinkedList.h
+DoubleLinkedList.o: DoubleLinkedList.cpp DoubleLinkedList.h
