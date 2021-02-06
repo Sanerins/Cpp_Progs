@@ -12,9 +12,11 @@
 // Вставить сформированный узел в хвост списка
 void DoubleLinkedList::insertTail(Node* x) 
 {
-	// !!!                                      !!!
-	// !!! Здесь долна быть реализация метода   !!!
-	// !!!                                      !!!
+	if (tail_ != nullptr) {
+        tail_->next_ = x;
+    }
+	tail_ = x;
+	count_++;
 }
 
 // Вставить сформированный узел в начало списка
@@ -31,6 +33,10 @@ void DoubleLinkedList::insertHead(Node* x)
 	}
 	head_ = x;
 	count_++;  // число элементов списка увеличилось
+}
+
+void DoubleLinkedList::insertList(DoubleLinkedList* src){
+
 }
 
 // Удаление заданного узла 
@@ -72,9 +78,7 @@ DoubleLinkedList::Node* DoubleLinkedList::searchNode(int item)
 // Замена информации узла на новое 
 DoubleLinkedList::Node* DoubleLinkedList::replaceNode(DoubleLinkedList::Node* x, int item)
 {
-	// !!!                                      !!!
-	// !!! Здесь долна быть реализация метода   !!!
-	// !!!                                      !!!
+    x->item_ = item;
 	return x; // !!!!!
 }
 
@@ -140,19 +144,32 @@ bool DoubleLinkedList::deleteHead()
 // Удалить элемент из хвоста списка
 bool DoubleLinkedList::deleteTail()
 {
-	// !!!                                      !!!
-	// !!! Здесь долна быть реализация метода   !!!
-	// !!!                                      !!!
-	return 0; // !!! удалить после реализации метода  !!!  
+	if (tail_ == nullptr){
+	    return 0;
+	}
+	deleteNode(tail_);
+	return 1;
 }
 
 // Удаление узла с заданным значением  
-bool DoubleLinkedList::deleteItem(const int item)
+bool DoubleLinkedList::deleteItem(const int item, const bool all)
 {
-	// !!!                                      !!!
-	// !!! Здесь долна быть реализация метода   !!!
-	// !!!                                      !!!
-	return 0; // !!! удалить после реализации метода  !!!
+	if(searchItem(item)){
+	    if(all){
+	        while(searchItem(item)){
+                Node *x = searchNode(item);
+                deleteNode(x);
+	        }
+	    }
+	    else {
+            Node *x = searchNode(item);
+            deleteNode(x);
+        }
+	    return 1;
+	}
+	else{
+	    return 0;
+	}
 }
 
 // Поиск записи с заданным значением  
@@ -163,12 +180,24 @@ bool DoubleLinkedList::searchItem(int item)
 
 
 // Замена информации узла на новое 
-bool DoubleLinkedList::replaceItem(int itemOld, int itemNew)
+bool DoubleLinkedList::replaceItem(const int itemOld,const int itemNew, const bool all)
 {
-	// !!!                                      !!!
-	// !!! Здесь долна быть реализация метода   !!!
-	// !!!                                      !!!
-	return 0; // !!! удалить после реализации метода  !!!
+    if(searchItem(itemOld)){
+        if(all){
+            while(searchItem(itemOld)){
+                Node *x = searchNode(itemOld);
+                deleteNode(x);
+            }
+        }
+        else {
+            Node *x = searchNode(itemOld);
+            deleteNode(x);
+        }
+        return 1;
+    }
+    else{
+        return 0;
+    }
 }
 
 // Вывод элементов списка в текстовом виде в стандартный выходной поток 
@@ -192,4 +221,47 @@ DoubleLinkedList::~DoubleLinkedList()
 		next = next->next_;    // переход к следующему элементу
 		delete current;        // освобождение памяти
 	}
+}
+
+//Оператор копирующего присваивания
+DoubleLinkedList& DoubleLinkedList::operator= (const DoubleLinkedList &src){
+
+}
+
+//Оператор перемещающего присваивания
+DoubleLinkedList& DoubleLinkedList::operator= (DoubleLinkedList &&src){
+
+}
+
+//Оператор вывода списка
+
+std::ostream& operator<<(std::ostream& out, DoubleLinkedList& src){
+    DoubleLinkedList::Node* x = src.head_;
+    while (x != nullptr){
+        out << x->item_ << " ";
+    }
+    out << " ";
+    return out;
+}
+
+//Оператор сравнения списков
+
+bool DoubleLinkedList::operator==(const DoubleLinkedList &src){
+    Node* x = head_;
+    Node* y = src.head_;
+    if(count_ != src.count_){
+        return 0;
+    }
+    else{
+        while(x != nullptr){
+            if(x->item_ != y->item_){
+                return 0;
+            }
+            else{
+                x = x->next_;
+                y = y->next_;
+            }
+        }
+    }
+    return 1;
 }

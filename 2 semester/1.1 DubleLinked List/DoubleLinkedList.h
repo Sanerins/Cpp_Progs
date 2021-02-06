@@ -1,7 +1,9 @@
 #ifndef __DOUBLE_LINKED_LIST
 #define __DOUBLE_LINKED_LIST
 
-//  DoubleLinkedList.h - Дважды связный список целых чисел  
+#include <iostream>
+
+//  DoubleLinkedList.h - Дважды связный список целых чисел
 //
 class DoubleLinkedList
 {
@@ -33,6 +35,9 @@ private:
 
     // Вставить сформированный узел в начало списка
     void insertHead(Node* x); // (int item);
+
+    // Вставить лист в конец списка
+    void insertList(DoubleLinkedList* src);
 
   // Удаление заданного узла 
     void deleteNode(Node* x);
@@ -75,13 +80,13 @@ public:
     bool deleteTail();
 
     // Удаление узла с заданным значением  
-    bool deleteItem(const int item);
+    bool deleteItem(const int item, const bool all);
 
     // Поиск записи с заданным значением  
     bool searchItem(int item);
 
     // Замена информации узла на новое 
-    bool replaceItem(int itemOld, int itemNew);
+    bool replaceItem(int itemOld, int itemNew, const bool all);
 
     // Вывод элементов списка в текстовом виде в стандартный выходной поток 
     void outAll();
@@ -91,6 +96,14 @@ public:
 
     //Оператор перемещающего присваивания
     DoubleLinkedList& operator= (DoubleLinkedList &&src);
+
+    //Оператор вывода списка
+
+    friend std::ostream& operator<<(std::ostream& out, DoubleLinkedList& src);
+
+    //Оператор сравнения списков
+
+    bool operator==(const DoubleLinkedList &src);
 
     // Деструктор списка	
     virtual ~DoubleLinkedList();

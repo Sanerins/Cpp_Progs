@@ -1,10 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/DoubleLinked.dir/DoubleLinkedList.cpp.obj"
-  "CMakeFiles/DoubleLinked.dir/main.cpp.obj"
-  "DoubleLinked.exe"
-  "DoubleLinked.exe.manifest"
+  "CMakeFiles/DoubleLinked.dir/DoubleLinkedList.cpp.o"
+  "CMakeFiles/DoubleLinked.dir/main.cpp.o"
+  "DoubleLinked"
   "DoubleLinked.pdb"
-  "libDoubleLinked.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.
