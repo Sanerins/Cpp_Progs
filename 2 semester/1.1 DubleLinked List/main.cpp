@@ -52,10 +52,15 @@ int main() {
     std::cout << list;
     std::cout << list1;
     std::cout << "Final check: \n";
-    DoubleLinkedList list2(testFunction(list1)); //Конструктор переноса
+    //DoubleLinkedList list2(testFunction(list1)); //Конструктор переноса
+    DoubleLinkedList list2(std::move(list1)); //Конструктор переноса
+    std::cout << list1 << " Пустой лист \n";
     std::cout << list2;
-    DoubleLinkedList list3 = testFunction(list1); //Оператор переноса
+    //DoubleLinkedList list3 = testFunction(list1); //Оператор переноса
+    DoubleLinkedList list3 = std::move(list2); //Оператор переноса
+    std::cout << list2 << " Пустой лист \n";
     std::cout << list3;
-    list3 = (testFunction(list1)); //Проверка на утечку при непустом
+    list3 = (testFunction(list3)); //Проверка на утечку при непустом
+    std::cout << list3;
     return 0;
 }

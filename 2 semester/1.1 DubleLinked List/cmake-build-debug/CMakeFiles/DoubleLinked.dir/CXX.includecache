@@ -6,13 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/home/sanerin/GitHub/Cpp_Progs/2 semester/1.1 DubleLinked List/DoubleLinkedList.cpp
-DoubleLinkedList.h
-/home/sanerin/GitHub/Cpp_Progs/2 semester/1.1 DubleLinked List/DoubleLinkedList.h
+D:/GitHub/Cpp_Progs/2 semester/1.1 DubleLinked List/DoubleLinkedList.h
 iostream
 -
 
-/home/sanerin/GitHub/Cpp_Progs/2 semester/1.1 DubleLinked List/DoubleLinkedList.h
+D:/GitHub/Cpp_Progs/2 semester/1.1 DubleLinked List/main.cpp
+DoubleLinkedList.h
+D:/GitHub/Cpp_Progs/2 semester/1.1 DubleLinked List/DoubleLinkedList.h
 iostream
 -
 

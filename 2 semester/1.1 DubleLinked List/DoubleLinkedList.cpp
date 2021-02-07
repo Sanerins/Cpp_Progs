@@ -34,6 +34,7 @@
  DoubleLinkedList::DoubleLinkedList(DoubleLinkedList&& src): count_(src.count_), head_(src.head_), tail_(src.tail_) {
     src.head_ = nullptr;
     src.tail_ = nullptr;
+    src.count_ = 0;
 }
 
 // Вставить сформированный узел в хвост списка
@@ -313,6 +314,7 @@ DoubleLinkedList& DoubleLinkedList::operator= (DoubleLinkedList &&src){
     count_ = src.count_;
     src.head_ = nullptr;
     src.tail_ = nullptr;
+    src.count_ = 0;
     return *this;
 }
 

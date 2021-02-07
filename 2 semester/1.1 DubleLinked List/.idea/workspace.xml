@@ -10,7 +10,7 @@
   </component>
   <component name="CMakeSettings">
     <configurations>
-      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" ENABLED="true" />
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
     </configurations>
   </component>
   <component name="ChangeListManager">
@@ -71,14 +71,9 @@
     <property name="settings.editor.selected.configurable" value="dynamic.analysis.tools.valgrind" />
   </component>
   <component name="RunManager">
-    <configuration name="DoubleLinked" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="DoubleLinked" TARGET_NAME="DoubleLinked" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="DoubleLinked" RUN_TARGET_NAME="DoubleLinked">
+    <configuration name="DoubleLinked" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="DoubleLinked" TARGET_NAME="DoubleLinked" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="DoubleLinked" RUN_TARGET_NAME="DoubleLinked">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
   </component>
@@ -103,6 +98,9 @@
       <workItem from="1612635403836" duration="73000" />
       <workItem from="1612636713982" duration="1683000" />
       <workItem from="1612638788326" duration="378000" />
+      <workItem from="1612639652191" duration="32000" />
+      <workItem from="1612640290108" duration="58000" />
+      <workItem from="1612688920730" duration="1486000" />
     </task>
     <servers />
   </component>
@@ -120,6 +118,40 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="2517" height="365" key="GridCell.Tab.0.bottom" timestamp="1612691503558">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="365" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1612691503558" />
+    <state width="2517" height="365" key="GridCell.Tab.0.center" timestamp="1612691503558">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="365" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1612691503558" />
+    <state width="2517" height="365" key="GridCell.Tab.0.left" timestamp="1612691503558">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="365" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1612691503558" />
+    <state width="2517" height="365" key="GridCell.Tab.0.right" timestamp="1612691503558">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="365" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1612691503558" />
+    <state width="2517" height="365" key="GridCell.Tab.1.bottom" timestamp="1612691503558">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="365" key="GridCell.Tab.1.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1612691503558" />
+    <state width="2517" height="365" key="GridCell.Tab.1.center" timestamp="1612691503558">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="365" key="GridCell.Tab.1.center/0.0.2560.1400@0.0.2560.1400" timestamp="1612691503558" />
+    <state width="2517" height="365" key="GridCell.Tab.1.left" timestamp="1612691503558">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="365" key="GridCell.Tab.1.left/0.0.2560.1400@0.0.2560.1400" timestamp="1612691503558" />
+    <state width="2517" height="365" key="GridCell.Tab.1.right" timestamp="1612691503558">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="365" key="GridCell.Tab.1.right/0.0.2560.1400@0.0.2560.1400" timestamp="1612691503558" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
