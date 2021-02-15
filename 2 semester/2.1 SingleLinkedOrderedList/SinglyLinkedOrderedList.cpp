@@ -5,6 +5,38 @@ SinglyLinkedOrderedList::SinglyLinkedOrderedList()
   head_ = nullptr;
 }
 
+SinglyLinkedOrderedList& SinglyLinkedOrderedList::operator=(const SinglyLinkedOrderedList& src){
+  if(src.head_ == nullptr){
+    head_ = nullptr;
+    return *this;
+  }
+  if(head_ != nullptr){
+    Purify();
+  }
+  head_ = new Node(src.head_->item_);
+  Node *current = head_;
+  Node *srcCurrent = src.head_;
+  while (srcCurrent->next_ != nullptr){
+    current->next_ = new Node(srcCurrent->next_->item_);
+    current = current->next_;
+    srcCurrent = srcCurrent->next_;
+  }
+  return *this;
+}
+
+SinglyLinkedOrderedList& SinglyLinkedOrderedList::operator=(SinglyLinkedOrderedList&& src){
+  if(src.head_ == nullptr){
+    head_ = nullptr;
+    return *this;
+  }
+  if(head_ != nullptr){
+    Purify();
+  }
+  head_ = src.head_;
+  src.head_ = nullptr;
+  return *this;
+}
+
 std::ostream &operator<<(std::ostream& out, SinglyLinkedOrderedList& src){
   SinglyLinkedOrderedList::Node *temp = src.head_;
   while (temp != nullptr)

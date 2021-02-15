@@ -3,74 +3,85 @@
 
 int main()
 {
-  SinglyLinkedOrderedList List;
-  List.Insert(6);
-  List.Insert(6); //Checking that each value can be added only once
-  List.Insert(3);
-  List.Insert(9);
-  List.Insert(5);
-  List.Insert(4);
-  std::cout << List << std::endl;
-  std::cout << (List.Search(6)? "6 is found" : "6 is not found") << std::endl;
-  std::cout << (List.Search(10)? "10 is found" : "10 is not found") << std::endl;
-  List.Delete(6); //6 is now deleted
-  std::cout << List << std::endl;
-  List.Insert(6);
-  std::cout << List << std::endl;
+  SinglyLinkedOrderedList list;
+  list.Insert(6);
+  list.Insert(6); //Checking that each value can be added only once
+  list.Insert(3);
+  list.Insert(9);
+  list.Insert(5);
+  list.Insert(4);
+  std::cout << list << std::endl;
+  std::cout << (list.Search(6) ? "6 is found" : "6 is not found") << std::endl;
+  std::cout << (list.Search(10) ? "10 is found" : "10 is not found") << std::endl;
+  list.Delete(6); //6 is now deleted
+  std::cout << list << std::endl;
+  list.Insert(6);
+  std::cout << list << std::endl;
 
-  SinglyLinkedOrderedList List1;
-  List1.Insert(8);
-  List1.Insert(3);
-  List1.Insert(0);
-  List1.Insert(5);
-  List1.Insert(12);
-  std::cout << List1 << std::endl;
-
-  std::cout << '\n';
-
-  std::cout << "List: " << List << std::endl;
-  std::cout << "List1: " << List1 << std::endl;
-  List.Intersect(&List1);
-  std::cout << "List after intersection: " << List << std::endl;
-  std::cout << "List1 is now empty: " << List1 << std::endl;
-
-  List.Insert(6);
-  List.Insert(3);
-  List.Insert(9);
-  List.Insert(5);
-  List.Insert(4);
-  List1.Insert(8);
-  List1.Insert(3);
-  List1.Insert(0);
-  List1.Insert(5);
-  List1.Insert(12);
+  SinglyLinkedOrderedList list1;
+  list1.Insert(8);
+  list1.Insert(3);
+  list1.Insert(0);
+  list1.Insert(5);
+  list1.Insert(12);
+  std::cout << list1 << std::endl;
 
   std::cout << '\n';
 
-  std::cout << "List: " << List << std::endl;
-  std::cout << "List1: " << List1 << std::endl;
-  List.Combine(&List1);
-  std::cout << "List after combining: " << List << std::endl;
-  std::cout << "List1 is now empty: " << List1 << std::endl;
+  std::cout << "list: " << list << std::endl;
+  std::cout << "list1: " << list1 << std::endl;
+  list.Intersect(&list1);
+  std::cout << "list after intersection: " << list << std::endl;
+  std::cout << "list1 is now empty: " << list1 << std::endl;
 
-  List1.Insert(8);
-  List1.Insert(3);
-  List1.Insert(0);
-  List1.Insert(5);
-  List1.Insert(12);
+  list.Insert(6);
+  list.Insert(3);
+  list.Insert(9);
+  list.Insert(5);
+  list.Insert(4);
+  list1.Insert(8);
+  list1.Insert(3);
+  list1.Insert(0);
+  list1.Insert(5);
+  list1.Insert(12);
+
+  std::cout << '\n';
+
+  std::cout << "list: " << list << std::endl;
+  std::cout << "list1: " << list1 << std::endl;
+  list.Combine(&list1);
+  std::cout << "list after combining: " << list << std::endl;
+  std::cout << "list1 is now empty: " << list1 << std::endl;
+
+  list1.Insert(8);
+  list1.Insert(3);
+  list1.Insert(0);
+  list1.Insert(5);
+  list1.Insert(12);
 
   std::cout << '\n';
 
   //Testing "Show" function as well
-  std::cout << "List: ";
-  List.Show();
-  std::cout << "List1: ";
-  List1.Show();
-  List.Exclude(&List1);
-  std::cout << "List after excluding: ";
-  List.Show();
-  std::cout << "List1 is now empty: ";
-  List1.Show();
+  std::cout << "list: ";
+  list.Show();
+  std::cout << "list1: ";
+  list1.Show();
+  list.Exclude(&list1);
+  std::cout << "list after excluding: ";
+  list.Show();
+  std::cout << "list1 is now empty: ";
+  list1.Show();
 
+  std::cout << '\n';
+
+  list1 = std::move(list);
+  std::cout << "list1 after moving: " << list1 << std::endl;
+  std::cout << "list is now empty: " << list << std::endl;
+
+  std::cout << '\n';
+
+  list = list1;
+  std::cout << "list after coping: " << list << std::endl;
+  std::cout << "list1 is the same: " << list1 << std::endl;
   return 0;
 }

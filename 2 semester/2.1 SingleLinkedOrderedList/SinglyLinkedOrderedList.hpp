@@ -10,6 +10,10 @@ public:
 
   ~SinglyLinkedOrderedList();
 
+  SinglyLinkedOrderedList& operator=(const SinglyLinkedOrderedList& src);
+
+  SinglyLinkedOrderedList& operator=(SinglyLinkedOrderedList&& src);
+
   friend std::ostream &operator<<(std::ostream& out, SinglyLinkedOrderedList& src);
 
   bool Search(const int &item) const;
