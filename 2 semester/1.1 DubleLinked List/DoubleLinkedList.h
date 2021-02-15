@@ -8,113 +8,135 @@
 class DoubleLinkedList
 {
 private:
-    // Тип  Node используется для описания элемента списка, связанного со 
-    // следующим с помощью поля next_ и предшествующим с помощью поле prev_
-    struct Node         // может использоваться  только в классе DoubleLinkedList
-    {
-        int item_;        // значение элемента списка
-        Node* next_;      // указатель на следующий элемент списка
-        Node* prev_;      // указатель на предшествующий элемент списка
+	// Тип  Node используется для описания элемента списка, связанного со
+	// следующим с помощью поля next_ и предшествующим с помощью поле prev_
+	struct Node         // может использоваться  только в классе DoubleLinkedList
+	{
+		int item_;        // значение элемента списка
+		Node *next_;      // указатель на следующий элемент списка
+		Node *prev_;      // указатель на предшествующий элемент списка
 
-        // Конструктор для создания нового элемента списка. 
-        Node(int item, Node* next = nullptr, Node* prev = nullptr) : item_(item), next_(next), prev_(prev) { }
+		// Конструктор для создания нового элемента списка.
+		Node(int item, Node *next = nullptr, Node *prev = nullptr):
+						item_(item),
+						next_(next),
+						prev_(prev)
+		{
+		}
 
-    };
+	};
 
-    int count_;         // счетчик числа элементов
-    Node* head_;        // первый элемент списка
-    Node* tail_;        // последний элемент списка
+	int count_;         // счетчик числа элементов
+	Node *head_;        // первый элемент списка
+	Node *tail_;        // последний элемент списка
 
-    // Доступ к головному узлу списка
-    Node* head() const { return head_; }
+	// Доступ к головному узлу списка
+	Node *head() const
+	{
+		return head_;
+	}
 
-    // Доступ к хвостовому узлу списка
-    Node* tail() const { return tail_; }
+	// Доступ к хвостовому узлу списка
+	Node *tail() const
+	{
+		return tail_;
+	}
 
-    // Всавить сформированный узел в хвост списка
-    void insertTail(Node* x);
+	// Всавить сформированный узел в хвост списка
+	void insertTail(Node *x);
 
-    // Вставить сформированный узел в начало списка
-    void insertHead(Node* x); // (int item);
+	// Вставить сформированный узел в начало списка
+	void insertHead(Node *x); // (int item);
 
-    // Удаление заданного узла
-    void deleteNode(Node* x);
+	// Удаление заданного узла
+	void deleteNode(Node *x);
 
-    // Поиск узла (адрес) с заданным значением  
-    Node* searchNode(int item);
+	// Поиск узла (адрес) с заданным значением
+	Node *searchNode(int item);
 
-    // Замена информации узла на новое 
-    Node* replaceNode(Node* x, int item);
+	// Замена информации узла на новое
+	Node *replaceNode(Node *x, int item);
 
 public:
 
-    // Конструктор "по умолчанию" - создание пустого списка
-    DoubleLinkedList() : count_(0), head_(nullptr), tail_(nullptr) {  }
+	// Конструктор "по умолчанию" - создание пустого списка
+	DoubleLinkedList():
+					count_(0),
+					head_(nullptr),
+					tail_(nullptr)
+	{
+	}
 
-    // Конструктор "копирования" – создание копии имеющегося списка
-    DoubleLinkedList(const DoubleLinkedList& src);
+	// Конструктор "копирования" – создание копии имеющегося списка
+	DoubleLinkedList(const DoubleLinkedList &src);
 
-    // Конструктор "перемещения" – создание копии имеющегося списка
-    DoubleLinkedList(DoubleLinkedList&& src);
+	// Конструктор "перемещения" – создание копии имеющегося списка
+	DoubleLinkedList(DoubleLinkedList &&src);
 
-    // количество элементов списка
-    int count()const { return count_; }
+	// количество элементов списка
+	int count() const
+	{
+		return count_;
+	}
 
-    // Доступ к информации головного узла списка
-    int headItem() const;
-    int& headItem();
+	// Доступ к информации головного узла списка
+	int headItem() const;
 
-    // Доступ к информации хвостового узла списка
-    int tailItem() const;
-    int& tailItem();
+	int &headItem();
 
-    // Вставить элемент в голову списка
-    void insertHead(int item);
+	// Доступ к информации хвостового узла списка
+	int tailItem() const;
 
-    // Вставить элемент в хвост списка
-    void insertTail(int item);
+	int &tailItem();
 
-    // Вставить лист в конец списка
-    void insertList(DoubleLinkedList& src);
+	// Вставить элемент в голову списка
+	void insertHead(int item);
 
-    // Удалить элемент с головы списка
-    bool deleteHead();
+	// Вставить элемент в хвост списка
+	void insertTail(int item);
 
-    // Удалить элемент из хвоста списка
-    bool deleteTail();
+	// Вставить лист в конец списка
+	void insertList(DoubleLinkedList &src);
 
-    // Удаление узла с заданным значением  
-    bool deleteItem(const int item, const bool all);
+	// Удалить элемент с головы списка
+	bool deleteHead();
 
-    // Поиск записи с заданным значением  
-    bool searchItem(int item);
+	// Удалить элемент из хвоста списка
+	bool deleteTail();
 
-    // Замена информации узла на новое 
-    bool replaceItem(int itemOld, int itemNew, const bool all = 0);
+	// Удаление узла с заданным значением
+	bool deleteItem(const int item, const bool all);
 
-    // Вывод элементов списка в текстовом виде в стандартный выходной поток 
-    void outAll();
+	// Поиск записи с заданным значением
+	bool searchItem(int item);
 
-    //Оператор копирующего присваивания
-    DoubleLinkedList& operator= (const DoubleLinkedList &src);
+	// Замена информации узла на новое
+	bool replaceItem(int itemOld, int itemNew, const bool all = 0);
 
-    //Метод для copy and swap алгоритма
-    void swap(DoubleLinkedList &src);
+	// Вывод элементов списка в текстовом виде в стандартный выходной поток
+	void outAll();
 
-    //Оператор перемещающего присваивания
-    DoubleLinkedList& operator= (DoubleLinkedList &&src);
+	//Оператор копирующего присваивания
+	DoubleLinkedList &operator=(const DoubleLinkedList &src);
 
-    //Оператор вывода списка
-    friend std::ostream& operator<<(std::ostream& out, DoubleLinkedList& src);
+	//Метод для copy and swap алгоритма
+	void swap(DoubleLinkedList &src);
 
-    //Оператор сравнения списков
-    bool operator==(const DoubleLinkedList &src);
+	//Оператор перемещающего присваивания
+	DoubleLinkedList &operator=(DoubleLinkedList &&src);
 
-    // Деструктор списка	
-    virtual ~DoubleLinkedList();
+	//Оператор вывода списка
+	friend std::ostream &operator<<(std::ostream &out, DoubleLinkedList &src);
 
-    //Метод очистки для переноса
-    void purify();
+	//Оператор сравнения списков
+	bool operator==(const DoubleLinkedList &src);
+
+	// Деструктор списка
+	virtual ~DoubleLinkedList();
+
+	//Метод очистки для переноса
+	void purify();
 };
+
 #endif
 

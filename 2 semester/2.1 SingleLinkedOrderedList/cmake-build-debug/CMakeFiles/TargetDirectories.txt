@@ -1,0 +1,3 @@
+/home/sanerin/GitHub/Cpp_Progs/2 semester/2.1 SingleLinkedOrderedList/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/sanerin/GitHub/Cpp_Progs/2 semester/2.1 SingleLinkedOrderedList/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/sanerin/GitHub/Cpp_Progs/2 semester/2.1 SingleLinkedOrderedList/cmake-build-debug/CMakeFiles/2_1_SingleLinkedOrderedList.dir

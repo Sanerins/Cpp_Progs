@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/0__GuideLines.dir/main.cpp.o  -o 0__GuideLines 

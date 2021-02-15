@@ -1,0 +1,3 @@
+SinglyLinkedOrderedList.o: SinglyLinkedOrderedList.cpp \
+ SinglyLinkedOrderedList.hpp
+main.o: main.cpp SinglyLinkedOrderedList.hpp

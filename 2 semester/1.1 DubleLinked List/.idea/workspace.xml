@@ -10,31 +10,19 @@
   </component>
   <component name="CMakeSettings">
     <configurations>
-      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" ENABLED="true" />
     </configurations>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="21a66e36-e9a7-42b1-83ac-f9783e1ceecb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DoubleLinkedList.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/DoubleLinkedList.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DoubleLinkedList.h" beforeDir="false" afterPath="$PROJECT_DIR$/DoubleLinkedList.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.5/CMakeSystem.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.5/CMakeSystem.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DoubleLinked.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DoubleLinked.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DoubleLinked.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DoubleLinked.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DoubleLinked.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DoubleLinked.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/DoubleLinked.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/DoubleLinked.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DoubleLinkedList.o" beforeDir="false" afterPath="$PROJECT_DIR$/DoubleLinkedList.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app" beforeDir="false" afterPath="$PROJECT_DIR$/app" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.o" beforeDir="false" afterPath="$PROJECT_DIR$/main.o" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,11 +55,11 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="dynamic.analysis.tools.valgrind" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../2.1 SingleLinkedOrderedList" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C/C++" />
   </component>
   <component name="RunManager">
-    <configuration name="DoubleLinked" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="DoubleLinked" TARGET_NAME="DoubleLinked" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="DoubleLinked" RUN_TARGET_NAME="DoubleLinked">
+    <configuration name="DoubleLinked" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="DoubleLinked" TARGET_NAME="DoubleLinked" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="DoubleLinked" RUN_TARGET_NAME="DoubleLinked">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -101,6 +89,19 @@
       <workItem from="1612639652191" duration="32000" />
       <workItem from="1612640290108" duration="58000" />
       <workItem from="1612688920730" duration="1486000" />
+      <workItem from="1612782079862" duration="211000" />
+      <workItem from="1612785232786" duration="153000" />
+      <workItem from="1612785412419" duration="39000" />
+      <workItem from="1612785463571" duration="317000" />
+      <workItem from="1612786008261" duration="527000" />
+      <workItem from="1612802084252" duration="281000" />
+      <workItem from="1612802382803" duration="79000" />
+      <workItem from="1612802890529" duration="136000" />
+      <workItem from="1612803080098" duration="160000" />
+      <workItem from="1612898126942" duration="774000" />
+      <workItem from="1613169808035" duration="69000" />
+      <workItem from="1613387901234" duration="1494000" />
+      <workItem from="1613393674906" duration="728000" />
     </task>
     <servers />
   </component>
@@ -118,40 +119,6 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state width="2517" height="365" key="GridCell.Tab.0.bottom" timestamp="1612691503558">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="2517" height="365" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1612691503558" />
-    <state width="2517" height="365" key="GridCell.Tab.0.center" timestamp="1612691503558">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="2517" height="365" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1612691503558" />
-    <state width="2517" height="365" key="GridCell.Tab.0.left" timestamp="1612691503558">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="2517" height="365" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1612691503558" />
-    <state width="2517" height="365" key="GridCell.Tab.0.right" timestamp="1612691503558">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="2517" height="365" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1612691503558" />
-    <state width="2517" height="365" key="GridCell.Tab.1.bottom" timestamp="1612691503558">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="2517" height="365" key="GridCell.Tab.1.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1612691503558" />
-    <state width="2517" height="365" key="GridCell.Tab.1.center" timestamp="1612691503558">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="2517" height="365" key="GridCell.Tab.1.center/0.0.2560.1400@0.0.2560.1400" timestamp="1612691503558" />
-    <state width="2517" height="365" key="GridCell.Tab.1.left" timestamp="1612691503558">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="2517" height="365" key="GridCell.Tab.1.left/0.0.2560.1400@0.0.2560.1400" timestamp="1612691503558" />
-    <state width="2517" height="365" key="GridCell.Tab.1.right" timestamp="1612691503558">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="2517" height="365" key="GridCell.Tab.1.right/0.0.2560.1400@0.0.2560.1400" timestamp="1612691503558" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
