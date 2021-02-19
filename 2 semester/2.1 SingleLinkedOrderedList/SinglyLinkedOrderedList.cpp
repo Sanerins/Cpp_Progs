@@ -145,7 +145,7 @@ SinglyLinkedOrderedList::Node *SinglyLinkedOrderedList::SearchNode(const int &it
 {
   Node *temp;
   temp = head_;
-  while (temp != nullptr)
+  while (temp != nullptr and temp->item_ <= item )
   {
     if (temp->item_ == item)
     {

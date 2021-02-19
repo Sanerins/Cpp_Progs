@@ -16,13 +16,8 @@
   <component name="ChangeListManager">
     <list default="true" id="21a66e36-e9a7-42b1-83ac-f9783e1ceecb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DoubleLinkedList.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/DoubleLinkedList.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DoubleLinkedList.h" beforeDir="false" afterPath="$PROJECT_DIR$/DoubleLinkedList.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DoubleLinkedList.o" beforeDir="false" afterPath="$PROJECT_DIR$/DoubleLinkedList.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app" beforeDir="false" afterPath="$PROJECT_DIR$/app" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.o" beforeDir="false" afterPath="$PROJECT_DIR$/main.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KosnitskiyLinkedList.zip" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +50,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../2.1 SingleLinkedOrderedList" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../prog_labs/kosnitskiy.alexander/A1" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C/C++" />
   </component>
   <component name="RunManager">
@@ -102,6 +97,10 @@
       <workItem from="1613169808035" duration="69000" />
       <workItem from="1613387901234" duration="1494000" />
       <workItem from="1613393674906" duration="728000" />
+      <workItem from="1613394817688" duration="17000" />
+      <workItem from="1613417529546" duration="1249000" />
+      <workItem from="1613462364525" duration="52000" />
+      <workItem from="1613462430328" duration="174000" />
     </task>
     <servers />
   </component>
