@@ -5,18 +5,22 @@ SinglyLinkedOrderedList::SinglyLinkedOrderedList()
   head_ = nullptr;
 }
 
-SinglyLinkedOrderedList& SinglyLinkedOrderedList::operator=(const SinglyLinkedOrderedList& src){
-  if(src.head_ == nullptr){
+SinglyLinkedOrderedList &SinglyLinkedOrderedList::operator=(const SinglyLinkedOrderedList &src)
+{
+  if (src.head_ == nullptr)
+  {
     head_ = nullptr;
     return *this;
   }
-  if(head_ != nullptr){
+  if (head_ != nullptr)
+  {
     Purify();
   }
   head_ = new Node(src.head_->item_);
   Node *current = head_;
   Node *srcCurrent = src.head_;
-  while (srcCurrent->next_ != nullptr){
+  while (srcCurrent->next_ != nullptr)
+  {
     current->next_ = new Node(srcCurrent->next_->item_);
     current = current->next_;
     srcCurrent = srcCurrent->next_;
@@ -24,12 +28,15 @@ SinglyLinkedOrderedList& SinglyLinkedOrderedList::operator=(const SinglyLinkedOr
   return *this;
 }
 
-SinglyLinkedOrderedList& SinglyLinkedOrderedList::operator=(SinglyLinkedOrderedList&& src){
-  if(src.head_ == nullptr){
+SinglyLinkedOrderedList &SinglyLinkedOrderedList::operator=(SinglyLinkedOrderedList &&src)
+{
+  if (src.head_ == nullptr)
+  {
     head_ = nullptr;
     return *this;
   }
-  if(head_ != nullptr){
+  if (head_ != nullptr)
+  {
     Purify();
   }
   head_ = src.head_;
@@ -37,7 +44,8 @@ SinglyLinkedOrderedList& SinglyLinkedOrderedList::operator=(SinglyLinkedOrderedL
   return *this;
 }
 
-std::ostream &operator<<(std::ostream& out, SinglyLinkedOrderedList& src){
+std::ostream &operator<<(std::ostream &out, SinglyLinkedOrderedList &src)
+{
   SinglyLinkedOrderedList::Node *temp = src.head_;
   while (temp != nullptr)
   {
@@ -66,16 +74,22 @@ bool SinglyLinkedOrderedList::Delete(const int &item)
 
 bool SinglyLinkedOrderedList::Combine(SinglyLinkedOrderedList *src)
 {
-  Node *curr = src->head_;
-  Node *temp = src->head_->next_;
-  while (curr != nullptr)
+  Node *startingNode = nullptr;
+  Node *curr = nullptr;
+  while (src->head_ != nullptr)
   {
-    Insert(curr);
-    curr = temp;
-    if (temp != nullptr)
+    curr = src->head_;
+    startingNode = Predecessor(curr->item_, startingNode);
+    if (startingNode != nullptr)
     {
-      temp = temp->next_;
+      if (startingNode->next_ == nullptr)
+      {
+        startingNode->next_ = src->head_;
+        break;
+      }
     }
+    src->head_ = src->head_->next_;
+    Insert(curr, startingNode);
   }
   src->head_ = nullptr;
   return 1;
@@ -83,11 +97,20 @@ bool SinglyLinkedOrderedList::Combine(SinglyLinkedOrderedList *src)
 
 bool SinglyLinkedOrderedList::Exclude(SinglyLinkedOrderedList *src)
 {
+  Node *startingNode = nullptr;
   Node *curr = src->head_;
   Node *arr;
   while (curr != nullptr)
   {
-    arr = SearchNode(curr->item_);
+    startingNode = Predecessor(curr->item_, startingNode);
+    if (startingNode != nullptr)
+    {
+      if (startingNode->next_ == nullptr)
+      {
+        break;
+      }
+    }
+    arr = SearchNode(curr->item_, startingNode);
     if (arr != nullptr)
     {
       Delete(arr);
@@ -100,18 +123,30 @@ bool SinglyLinkedOrderedList::Exclude(SinglyLinkedOrderedList *src)
 
 bool SinglyLinkedOrderedList::Intersect(SinglyLinkedOrderedList *src)
 {
-  Node *curr = head_;
-  Node *temp = head_->next_;
-  while (curr != nullptr)
+  Node *startingNode = nullptr;
+  Node *curr = nullptr;
+  Node *temp = head_;
+  while (temp != nullptr)
   {
-    if (!src->Search(curr->item_))
+    curr = temp;
+    temp = temp->next_;
+    startingNode = src->Predecessor(curr->item_, startingNode);
+    if (startingNode != nullptr)
+    {
+      if (startingNode->next_ == nullptr)
+      {
+        while (temp != nullptr)
+        {
+          Delete(curr);
+          curr = temp;
+          temp = temp->next_;
+        }
+        break;
+      }
+    }
+    if (!src->SearchNode(curr->item_, startingNode))
     {
       Delete(curr);
-    }
-    curr = temp;
-    if (temp != nullptr)
-    {
-      temp = temp->next_;
     }
   }
   src->Purify();
@@ -132,20 +167,28 @@ bool SinglyLinkedOrderedList::Show()
 
 SinglyLinkedOrderedList::~SinglyLinkedOrderedList()
 {
-  Node* temp = head_;
-  Node* curr = nullptr;
-  while (temp != nullptr){
+  Node *temp = head_;
+  Node *curr = nullptr;
+  while (temp != nullptr)
+  {
     curr = temp;
-    temp = temp -> next_;
+    temp = temp->next_;
     delete curr;
   }
 }
 
-SinglyLinkedOrderedList::Node *SinglyLinkedOrderedList::SearchNode(const int &item) const
+SinglyLinkedOrderedList::Node *SinglyLinkedOrderedList::SearchNode(const int &item, Node *startingNode) const
 {
   Node *temp;
-  temp = head_;
-  while (temp != nullptr and temp->item_ <= item )
+  if (startingNode == nullptr)
+  {
+    temp = head_;
+  }
+  else
+  {
+    temp = startingNode;
+  }
+  while (temp != nullptr and temp->item_ <= item)
   {
     if (temp->item_ == item)
     {
@@ -156,7 +199,7 @@ SinglyLinkedOrderedList::Node *SinglyLinkedOrderedList::SearchNode(const int &it
   return (nullptr);
 }
 
-bool SinglyLinkedOrderedList::Insert(Node *item)
+bool SinglyLinkedOrderedList::Insert(Node *item, Node *startingNode)
 {
   if (head_ == nullptr)
   {
@@ -164,20 +207,42 @@ bool SinglyLinkedOrderedList::Insert(Node *item)
   }
   else
   {
-    if (Search(item->item_))
-    {
-      delete item;
-      return 0;
-    }
-    Node *predecessor = Predecessor((item->item_));
+    Node *predecessor = Predecessor(item->item_, startingNode);
     if (predecessor == nullptr)
     {
-      item->next_ = head_;
-      head_ = item;
+      if (startingNode == nullptr)
+      {
+        if (head_->item_ == item->item_)
+        {
+          delete item;
+          item = head_;
+          return 0;
+        }
+        item->next_ = head_;
+        head_ = item;
+      }
+      else
+      {
+        if (startingNode->item_ == item->item_)
+        {
+          delete item;
+          item = startingNode;
+          return 0;
+        }
+        item->next_ = startingNode;
+        Predecessor(startingNode->item_)->next_ = item;
+      }
     }
     else if (predecessor->next_ == nullptr)
     {
       predecessor->next_ = item;
+      item->next_ = nullptr;
+    }
+    else if (predecessor->next_->item_ == item->item_)
+    {
+      delete item;
+      item = predecessor->next_;
+      return 0;
     }
     else
     {
@@ -225,8 +290,9 @@ SinglyLinkedOrderedList::Node *SinglyLinkedOrderedList::Minimun() const
 
 SinglyLinkedOrderedList::Node *SinglyLinkedOrderedList::Maximum() const
 {
-  Node* temp = head_;
-  while(temp->next_ != nullptr){
+  Node *temp = head_;
+  while (temp->next_ != nullptr)
+  {
     temp = temp->next_;
   }
   return (temp);
@@ -246,13 +312,22 @@ SinglyLinkedOrderedList::Node *SinglyLinkedOrderedList::Successor(const int item
   return (nullptr);
 }
 
-SinglyLinkedOrderedList::Node *SinglyLinkedOrderedList::Predecessor(const int item) const
+SinglyLinkedOrderedList::Node *SinglyLinkedOrderedList::Predecessor(const int item, Node *startingNode) const
 {
-  if (head_->item_ >= item)
+  Node *temp;
+  if (startingNode == nullptr)
+  {
+    temp = head_;
+  }
+  else
+  {
+    temp = startingNode;
+  }
+
+  if (temp->item_ >= item)
   {
     return (nullptr);
   }
-  Node *temp = head_;
   while (temp->next_ != nullptr)
   {
     if (temp->item_ < item and temp->next_->item_ >= item)
@@ -264,12 +339,14 @@ SinglyLinkedOrderedList::Node *SinglyLinkedOrderedList::Predecessor(const int it
   return (temp);
 }
 
-void SinglyLinkedOrderedList::Purify(){
-  Node* temp = head_;
-  Node* curr = nullptr;
-  while (temp != nullptr){
+void SinglyLinkedOrderedList::Purify()
+{
+  Node *temp = head_;
+  Node *curr = nullptr;
+  while (temp != nullptr)
+  {
     curr = temp;
-    temp = temp -> next_;
+    temp = temp->next_;
     delete curr;
   }
   head_ = nullptr;

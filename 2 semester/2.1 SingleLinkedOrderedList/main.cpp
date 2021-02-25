@@ -26,6 +26,19 @@ int main()
   list1.Insert(12);
   std::cout << list1 << std::endl;
 
+  list.Insert(39);
+  list.Insert(13);
+  list.Insert(28);
+  list.Insert(34);
+  list.Insert(93);
+  list.Insert(77);
+  list1.Insert(13);
+  list1.Insert(67);
+  list1.Insert(54);
+  list1.Insert(28);
+  list1.Insert(92);
+  list1.Insert(93);
+
   std::cout << '\n';
 
   std::cout << "list: " << list << std::endl;
@@ -44,6 +57,18 @@ int main()
   list1.Insert(0);
   list1.Insert(5);
   list1.Insert(12);
+  list.Insert(39);
+  list.Insert(13);
+  list.Insert(28);
+  list.Insert(34);
+  list.Insert(93);
+  list.Insert(77);
+  list1.Insert(13);
+  list1.Insert(67);
+  list1.Insert(54);
+  list1.Insert(28);
+  list1.Insert(92);
+  list1.Insert(93);
 
   std::cout << '\n';
 
@@ -58,6 +83,12 @@ int main()
   list1.Insert(0);
   list1.Insert(5);
   list1.Insert(12);
+  list1.Insert(13);
+  list1.Insert(67);
+  list1.Insert(54);
+  list1.Insert(28);
+  list1.Insert(92);
+  list1.Insert(93);
 
   std::cout << '\n';
 

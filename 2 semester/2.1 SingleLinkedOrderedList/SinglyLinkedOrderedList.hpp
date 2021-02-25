@@ -45,9 +45,9 @@ private:
 
   Node *head_;
 
-  Node *SearchNode(const int &item) const;
+  Node *SearchNode(const int &item, Node *startingNode = nullptr) const;
 
-  bool Insert(Node *item);
+  bool Insert(Node *item, Node *startingNode = nullptr);
 
   bool Delete(Node *item);
 
@@ -57,7 +57,7 @@ private:
 
   Node *Successor(const int item) const;
 
-  Node *Predecessor(const int item) const;
+  Node *Predecessor(const int item, Node *startingNode = nullptr) const;
 
   void Purify();
 };

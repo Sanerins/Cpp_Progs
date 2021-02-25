@@ -6,11 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/home/sanerin/GitHub/Cpp_Progs/2 semester/2.1 SingleLinkedOrderedList/SinglyLinkedOrderedList.cpp
-SinglyLinkedOrderedList.hpp
-/home/sanerin/GitHub/Cpp_Progs/2 semester/2.1 SingleLinkedOrderedList/SinglyLinkedOrderedList.hpp
-
 /home/sanerin/GitHub/Cpp_Progs/2 semester/2.1 SingleLinkedOrderedList/SinglyLinkedOrderedList.hpp
 iostream
 -
+
+/home/sanerin/GitHub/Cpp_Progs/2 semester/2.1 SingleLinkedOrderedList/main.cpp
+iostream
+-
+SinglyLinkedOrderedList.hpp
+/home/sanerin/GitHub/Cpp_Progs/2 semester/2.1 SingleLinkedOrderedList/SinglyLinkedOrderedList.hpp
 
