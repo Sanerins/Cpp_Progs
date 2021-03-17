@@ -7,11 +7,15 @@
   </component>
   <component name="CMakeSettings">
     <configurations>
-      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" ENABLED="true" />
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="99c44310-7757-49b6-9dc1-e603c3403b92" name="Default Changelist" comment="" />
+    <list default="true" id="99c44310-7757-49b6-9dc1-e603c3403b92" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../2 semester/1.1 DubleLinked List/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../2 semester/1.1 DubleLinked List/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2 semester/1.1 DubleLinked List/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../2 semester/1.1 DubleLinked List/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2 semester/2.1 SingleLinkedOrderedList/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../2 semester/2.1 SingleLinkedOrderedList/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,7 +26,7 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="ProjectId" id="1kptvlmTKxW2lMlp4II2ayPWd8x" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -32,9 +36,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/cpp-learning-7th-lab/7th lab" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../2 semester/2.1 SingleLinkedOrderedList" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -50,7 +55,7 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="9_1_Classes" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="9_1_Classes" TARGET_NAME="9_1_Classes" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="9_1_Classes" RUN_TARGET_NAME="9_1_Classes">
+    <configuration name="9_1_Classes" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="9_1_Classes" TARGET_NAME="9_1_Classes" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="9_1_Classes" RUN_TARGET_NAME="9_1_Classes">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -104,73 +109,15 @@
       <workItem from="1608058045365" duration="781000" />
       <workItem from="1608065370121" duration="1736000" />
       <workItem from="1608232751732" duration="20000" />
+      <workItem from="1615242420665" duration="33000" />
+      <workItem from="1615242981469" duration="49000" />
+      <workItem from="1615313896305" duration="47000" />
+      <workItem from="1615497646993" duration="25000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="736" y="356" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607774591763">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="736" y="356" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1607774591763" />
-    <state x="1086" y="417" key="#com.intellij.ide.util.MemberChooser" timestamp="1606600636222">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="1086" y="417" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1400@0.0.2560.1400" timestamp="1606600636222" />
-    <state x="1176" y="454" width="493" height="493" key="#xdebugger.XInspectDialog" timestamp="1606502122136">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="1176" y="454" width="493" height="493" key="#xdebugger.XInspectDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1606502122136" />
-    <state x="1061" y="456" key="FileChooserDialogImpl" timestamp="1608232770428">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="1061" y="456" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1608232770428" />
-    <state width="2517" height="134" key="GridCell.Tab.0.bottom" timestamp="1608069951302">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="2517" height="134" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1608069951302" />
-    <state width="2517" height="134" key="GridCell.Tab.0.center" timestamp="1608069951302">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="2517" height="134" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1608069951302" />
-    <state width="2517" height="134" key="GridCell.Tab.0.left" timestamp="1608069951302">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="2517" height="134" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1608069951302" />
-    <state width="2517" height="134" key="GridCell.Tab.0.right" timestamp="1608069951302">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="2517" height="134" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1608069951302" />
-    <state width="2517" height="134" key="GridCell.Tab.1.bottom" timestamp="1608069951302">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="2517" height="134" key="GridCell.Tab.1.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1608069951302" />
-    <state width="2517" height="134" key="GridCell.Tab.1.center" timestamp="1608069951302">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="2517" height="134" key="GridCell.Tab.1.center/0.0.2560.1400@0.0.2560.1400" timestamp="1608069951302" />
-    <state width="2517" height="134" key="GridCell.Tab.1.left" timestamp="1608069951302">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="2517" height="134" key="GridCell.Tab.1.left/0.0.2560.1400@0.0.2560.1400" timestamp="1608069951302" />
-    <state width="2517" height="134" key="GridCell.Tab.1.right" timestamp="1608069951302">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="2517" height="134" key="GridCell.Tab.1.right/0.0.2560.1400@0.0.2560.1400" timestamp="1608069951302" />
-    <state x="637" y="360" width="1135" height="919" key="SettingsEditor" timestamp="1607196366317">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="637" y="360" width="1135" height="919" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1607196366317" />
-    <state x="1233" y="609" key="refactoring.ChangeSignatureDialog" timestamp="1607516878533">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="1233" y="609" key="refactoring.ChangeSignatureDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1607516878533" />
-    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1607534599309">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1607534599309" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

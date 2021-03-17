@@ -4,10 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "D:/GitHub/Cpp_Progs/9.1 Classes/Cuisine.cpp" "D:/GitHub/Cpp_Progs/9.1 Classes/cmake-build-debug/CMakeFiles/9_1_Classes.dir/Cuisine.cpp.obj"
-  "D:/GitHub/Cpp_Progs/9.1 Classes/Dish.cpp" "D:/GitHub/Cpp_Progs/9.1 Classes/cmake-build-debug/CMakeFiles/9_1_Classes.dir/Dish.cpp.obj"
-  "D:/GitHub/Cpp_Progs/9.1 Classes/MyString.cpp" "D:/GitHub/Cpp_Progs/9.1 Classes/cmake-build-debug/CMakeFiles/9_1_Classes.dir/MyString.cpp.obj"
-  "D:/GitHub/Cpp_Progs/9.1 Classes/main.cpp" "D:/GitHub/Cpp_Progs/9.1 Classes/cmake-build-debug/CMakeFiles/9_1_Classes.dir/main.cpp.obj"
+  "/home/sanerin/GitHub/Cpp_Progs/1 semester/9.1 Classes/Cuisine.cpp" "/home/sanerin/GitHub/Cpp_Progs/1 semester/9.1 Classes/cmake-build-debug/CMakeFiles/9_1_Classes.dir/Cuisine.cpp.o"
+  "/home/sanerin/GitHub/Cpp_Progs/1 semester/9.1 Classes/Dish.cpp" "/home/sanerin/GitHub/Cpp_Progs/1 semester/9.1 Classes/cmake-build-debug/CMakeFiles/9_1_Classes.dir/Dish.cpp.o"
+  "/home/sanerin/GitHub/Cpp_Progs/1 semester/9.1 Classes/MyString.cpp" "/home/sanerin/GitHub/Cpp_Progs/1 semester/9.1 Classes/cmake-build-debug/CMakeFiles/9_1_Classes.dir/MyString.cpp.o"
+  "/home/sanerin/GitHub/Cpp_Progs/1 semester/9.1 Classes/main.cpp" "/home/sanerin/GitHub/Cpp_Progs/1 semester/9.1 Classes/cmake-build-debug/CMakeFiles/9_1_Classes.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
