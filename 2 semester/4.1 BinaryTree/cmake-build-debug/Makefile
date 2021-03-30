@@ -143,33 +143,6 @@ depend:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/4_1_BinaryTree.dir/build.make CMakeFiles/4_1_BinaryTree.dir/build
 .PHONY : 4_1_BinaryTree/fast
 
-BinarySearchTree.o: BinarySearchTree.cpp.o
-
-.PHONY : BinarySearchTree.o
-
-# target to build an object file
-BinarySearchTree.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/4_1_BinaryTree.dir/build.make CMakeFiles/4_1_BinaryTree.dir/BinarySearchTree.cpp.o
-.PHONY : BinarySearchTree.cpp.o
-
-BinarySearchTree.i: BinarySearchTree.cpp.i
-
-.PHONY : BinarySearchTree.i
-
-# target to preprocess a source file
-BinarySearchTree.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/4_1_BinaryTree.dir/build.make CMakeFiles/4_1_BinaryTree.dir/BinarySearchTree.cpp.i
-.PHONY : BinarySearchTree.cpp.i
-
-BinarySearchTree.s: BinarySearchTree.cpp.s
-
-.PHONY : BinarySearchTree.s
-
-# target to generate assembly for a file
-BinarySearchTree.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/4_1_BinaryTree.dir/build.make CMakeFiles/4_1_BinaryTree.dir/BinarySearchTree.cpp.s
-.PHONY : BinarySearchTree.cpp.s
-
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -206,9 +179,6 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... 4_1_BinaryTree"
-	@echo "... BinarySearchTree.o"
-	@echo "... BinarySearchTree.i"
-	@echo "... BinarySearchTree.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

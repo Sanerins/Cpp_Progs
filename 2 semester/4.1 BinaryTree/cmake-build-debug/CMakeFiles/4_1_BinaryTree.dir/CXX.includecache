@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/sanerin/GitHub/Cpp_Progs/2 semester/4.1 BinaryTree/BinarySearchTree.hpp
+iostream
+-
+algorithm
+-
+queue.hpp
+/home/sanerin/GitHub/Cpp_Progs/2 semester/4.1 BinaryTree/queue.hpp
+
+/home/sanerin/GitHub/Cpp_Progs/2 semester/4.1 BinaryTree/main.cpp
+iostream
+-
+queue.hpp
+/home/sanerin/GitHub/Cpp_Progs/2 semester/4.1 BinaryTree/queue.hpp
+stack.hpp
+/home/sanerin/GitHub/Cpp_Progs/2 semester/4.1 BinaryTree/stack.hpp
+BinarySearchTree.hpp
+/home/sanerin/GitHub/Cpp_Progs/2 semester/4.1 BinaryTree/BinarySearchTree.hpp
+
+/home/sanerin/GitHub/Cpp_Progs/2 semester/4.1 BinaryTree/queue.hpp
+exception
+-
+
+/home/sanerin/GitHub/Cpp_Progs/2 semester/4.1 BinaryTree/stack.hpp
+exception
+-
+

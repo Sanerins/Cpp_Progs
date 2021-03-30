@@ -82,13 +82,16 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/sanerin/GitHub/Cpp_Progs/2 semester/4.1 BinaryTree/BinarySearchTree.cpp">
-			<Option target="4_1_BinaryTree"/>
-		</Unit>
 		<Unit filename="/home/sanerin/GitHub/Cpp_Progs/2 semester/4.1 BinaryTree/BinarySearchTree.hpp">
 			<Option target="4_1_BinaryTree"/>
 		</Unit>
 		<Unit filename="/home/sanerin/GitHub/Cpp_Progs/2 semester/4.1 BinaryTree/main.cpp">
+			<Option target="4_1_BinaryTree"/>
+		</Unit>
+		<Unit filename="/home/sanerin/GitHub/Cpp_Progs/2 semester/4.1 BinaryTree/queue.hpp">
+			<Option target="4_1_BinaryTree"/>
+		</Unit>
+		<Unit filename="/home/sanerin/GitHub/Cpp_Progs/2 semester/4.1 BinaryTree/stack.hpp">
 			<Option target="4_1_BinaryTree"/>
 		</Unit>
 		<Unit filename="/home/sanerin/GitHub/Cpp_Progs/2 semester/4.1 BinaryTree/CMakeLists.txt">
