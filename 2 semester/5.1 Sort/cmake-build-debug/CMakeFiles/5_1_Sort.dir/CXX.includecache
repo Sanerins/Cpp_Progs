@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/sanerin/GitHub/Cpp_Progs/2 semester/5.1 Sort/bubbleSort.hpp
+
+/home/sanerin/GitHub/Cpp_Progs/2 semester/5.1 Sort/main.cpp
+iostream
+-
+ctime
+-
+cmath
+-
+chrono
+-
+bubbleSort.hpp
+/home/sanerin/GitHub/Cpp_Progs/2 semester/5.1 Sort/bubbleSort.hpp
+pocketSort.hpp
+/home/sanerin/GitHub/Cpp_Progs/2 semester/5.1 Sort/pocketSort.hpp
+pyramidSort.hpp
+/home/sanerin/GitHub/Cpp_Progs/2 semester/5.1 Sort/pyramidSort.hpp
+
+/home/sanerin/GitHub/Cpp_Progs/2 semester/5.1 Sort/pocketSort.hpp
+algorithm
+-
+vector
+-
+
+/home/sanerin/GitHub/Cpp_Progs/2 semester/5.1 Sort/pyramidSort.hpp
+

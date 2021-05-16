@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/sanerin/GitHub/Cpp_Progs/2 semester/4.1 BinaryTree/main.cpp" "/home/sanerin/GitHub/Cpp_Progs/2 semester/4.1 BinaryTree/cmake-build-debug/CMakeFiles/4_1_BinaryTree.dir/main.cpp.o"
+  "/home/sanerin/GitHub/Cpp_Progs/2 semester/4.1 BinaryTree/test-main.cpp" "/home/sanerin/GitHub/Cpp_Progs/2 semester/4.1 BinaryTree/cmake-build-debug/CMakeFiles/4_1_BinaryTree.dir/test-main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

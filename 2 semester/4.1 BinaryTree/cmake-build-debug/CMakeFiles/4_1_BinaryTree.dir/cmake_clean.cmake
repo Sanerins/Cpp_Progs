@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "4_1_BinaryTree"
   "4_1_BinaryTree.pdb"
-  "CMakeFiles/4_1_BinaryTree.dir/main.cpp.o"
+  "CMakeFiles/4_1_BinaryTree.dir/test-main.cpp.o"
 )
 
 # Per-language clean rules from dependency scanning.

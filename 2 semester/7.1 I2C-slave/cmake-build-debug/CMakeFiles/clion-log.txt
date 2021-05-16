@@ -1,0 +1,4 @@
+/home/sanerin/clion-2020.3.2/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_CXX_FLAGS=-Wall -Wextra -Werror -Wno-missing-field-initializers -Wold-style-cast" -G "CodeBlocks - Unix Makefiles" "/home/sanerin/GitHub/Cpp_Progs/2 semester/7.1 I2C-slave"
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/sanerin/GitHub/Cpp_Progs/2 semester/7.1 I2C-slave/cmake-build-debug

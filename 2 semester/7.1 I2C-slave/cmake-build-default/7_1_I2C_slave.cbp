@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="7_1_I2C_slave"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/sanerin/GitHub/Cpp_Progs/2 semester/7.1 I2C-slave/cmake-build-default"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j6 -f &quot;/home/sanerin/GitHub/Cpp_Progs/2\ semester/7.1\ I2C-slave/cmake-build-default/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j6 -f &quot;/home/sanerin/GitHub/Cpp_Progs/2\ semester/7.1\ I2C-slave/cmake-build-default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j6 -f &quot;/home/sanerin/GitHub/Cpp_Progs/2\ semester/7.1\ I2C-slave/cmake-build-default/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j6 -f &quot;/home/sanerin/GitHub/Cpp_Progs/2\ semester/7.1\ I2C-slave/cmake-build-default/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/sanerin/GitHub/Cpp_Progs/2 semester/7.1 I2C-slave/cmake-build-default"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j6 -f &quot;/home/sanerin/GitHub/Cpp_Progs/2\ semester/7.1\ I2C-slave/cmake-build-default/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j6 -f &quot;/home/sanerin/GitHub/Cpp_Progs/2\ semester/7.1\ I2C-slave/cmake-build-default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j6 -f &quot;/home/sanerin/GitHub/Cpp_Progs/2\ semester/7.1\ I2C-slave/cmake-build-default/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j6 -f &quot;/home/sanerin/GitHub/Cpp_Progs/2\ semester/7.1\ I2C-slave/cmake-build-default/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/sanerin/GitHub/Cpp_Progs/2 semester/7.1 I2C-slave/cmake-build-default"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j6 -f &quot;/home/sanerin/GitHub/Cpp_Progs/2\ semester/7.1\ I2C-slave/cmake-build-default/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j6 -f &quot;/home/sanerin/GitHub/Cpp_Progs/2\ semester/7.1\ I2C-slave/cmake-build-default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j6 -f &quot;/home/sanerin/GitHub/Cpp_Progs/2\ semester/7.1\ I2C-slave/cmake-build-default/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j6 -f &quot;/home/sanerin/GitHub/Cpp_Progs/2\ semester/7.1\ I2C-slave/cmake-build-default/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="7_1_I2C_slave">
+				<Option output="/home/sanerin/GitHub/Cpp_Progs/2 semester/7.1 I2C-slave/cmake-build-default/7_1_I2C_slave" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/sanerin/GitHub/Cpp_Progs/2 semester/7.1 I2C-slave/cmake-build-default"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/systemc233/include"/>
+					<Add directory="/usr/local/systemc233/lib-linux64"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j6 -f &quot;/home/sanerin/GitHub/Cpp_Progs/2\ semester/7.1\ I2C-slave/cmake-build-default/Makefile&quot;  VERBOSE=1 7_1_I2C_slave"/>
+					<CompileFile command="/usr/bin/make -j6 -f &quot;/home/sanerin/GitHub/Cpp_Progs/2\ semester/7.1\ I2C-slave/cmake-build-default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j6 -f &quot;/home/sanerin/GitHub/Cpp_Progs/2\ semester/7.1\ I2C-slave/cmake-build-default/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j6 -f &quot;/home/sanerin/GitHub/Cpp_Progs/2\ semester/7.1\ I2C-slave/cmake-build-default/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="7_1_I2C_slave/fast">
+				<Option output="/home/sanerin/GitHub/Cpp_Progs/2 semester/7.1 I2C-slave/cmake-build-default/7_1_I2C_slave" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/sanerin/GitHub/Cpp_Progs/2 semester/7.1 I2C-slave/cmake-build-default"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/systemc233/include"/>
+					<Add directory="/usr/local/systemc233/lib-linux64"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j6 -f &quot;/home/sanerin/GitHub/Cpp_Progs/2\ semester/7.1\ I2C-slave/cmake-build-default/Makefile&quot;  VERBOSE=1 7_1_I2C_slave/fast"/>
+					<CompileFile command="/usr/bin/make -j6 -f &quot;/home/sanerin/GitHub/Cpp_Progs/2\ semester/7.1\ I2C-slave/cmake-build-default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j6 -f &quot;/home/sanerin/GitHub/Cpp_Progs/2\ semester/7.1\ I2C-slave/cmake-build-default/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j6 -f &quot;/home/sanerin/GitHub/Cpp_Progs/2\ semester/7.1\ I2C-slave/cmake-build-default/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/sanerin/GitHub/Cpp_Progs/2 semester/7.1 I2C-slave/I2CSlaveController.cpp">
+			<Option target="7_1_I2C_slave"/>
+		</Unit>
+		<Unit filename="/home/sanerin/GitHub/Cpp_Progs/2 semester/7.1 I2C-slave/I2CSlaveController.h">
+			<Option target="7_1_I2C_slave"/>
+		</Unit>
+		<Unit filename="/home/sanerin/GitHub/Cpp_Progs/2 semester/7.1 I2C-slave/I2CSlaveControllerTest.cpp">
+			<Option target="7_1_I2C_slave"/>
+		</Unit>
+		<Unit filename="/home/sanerin/GitHub/Cpp_Progs/2 semester/7.1 I2C-slave/I2CSlaveControllerTest.h">
+			<Option target="7_1_I2C_slave"/>
+		</Unit>
+		<Unit filename="/home/sanerin/GitHub/Cpp_Progs/2 semester/7.1 I2C-slave/main.cpp">
+			<Option target="7_1_I2C_slave"/>
+		</Unit>
+		<Unit filename="/home/sanerin/GitHub/Cpp_Progs/2 semester/7.1 I2C-slave/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
