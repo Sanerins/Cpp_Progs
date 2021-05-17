@@ -2,15 +2,11 @@
 #include "I2CSlaveController.h"
 #include "I2CSlaveControllerTest.h"
 
-// main is defined in systemc.lib
 int sc_main(int argc, char *argv[])
 {
-  // create modules
   I2CSlaveController slave("slave");
   I2CSlaveControllerTest slave_test("slave_test");
-  //create 100MHz clock
   sc_clock s_clk("clk", 10, SC_NS);
-  // create signals
   sc_signal<bool> s_reset("reset");
   sc_signal<sc_uint<8> > s_data("data");
   sc_signal<bool> s_valid("valid");
@@ -33,10 +29,8 @@ int sc_main(int argc, char *argv[])
   slave_test.sda(s_sda);
   slave_test.sda_m(s_sda_m);
   slave_test.sda_o(s_sda_o);
-  // create output trace file
   sc_trace_file *tf = sc_create_vcd_trace_file("labI2CSlave");
   tf->set_time_unit(1, SC_NS);
-  // all changed in signals will be auto output'ed to trace file
   sc_trace(tf, s_clk, "clk");
   sc_trace(tf, s_reset, "reset");
   sc_trace(tf, s_data, "data");

@@ -21,7 +21,6 @@ SC_MODULE(I2CSlaveController)
   sc_signal<bool> isShowing;
   sc_signal<bool> isShowingRef;
 
-  // methods
   void combLogic();
 
   void writeByte();
@@ -31,7 +30,7 @@ SC_MODULE(I2CSlaveController)
   void startComb();
 
   void finish();
-  // constructor of module
+
   SC_CTOR(I2CSlaveController)
   {
     SC_METHOD(writeByte);
@@ -43,8 +42,6 @@ SC_MODULE(I2CSlaveController)
     SC_METHOD(finish);
     sensitive << sda.pos();
     SC_METHOD(combLogic);
-    // чувствительность к nextScl вместо самого scl, чтобы в последовательной логике
-    // успели измениться сигналы
     sensitive << nextScl << isShowing;
   }
 };

@@ -19,7 +19,6 @@ SC_MODULE(I2CSlaveControllerTest)
   /*** INTERNAL SIGNALS: ***/
   sc_signal<sc_uint<4> > count;
 
-  // methods
   void on_start();
 
   SC_CTOR(I2CSlaveControllerTest)
