@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wall -Wextra -Werror -Wno-missing-field-initializers -Wold-style-cast -g CMakeFiles/4_1_BinaryTree.dir/main.cpp.o CMakeFiles/4_1_BinaryTree.dir/FrequencyBook.cpp.o CMakeFiles/4_1_BinaryTree.dir/BinarySearchTree.cpp.o -o 4_1_BinaryTree 

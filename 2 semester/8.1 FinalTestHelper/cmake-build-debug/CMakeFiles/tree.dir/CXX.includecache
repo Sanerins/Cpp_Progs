@@ -1,0 +1,74 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/sanerin/GitHub/Cpp_Progs/2 semester/8.1 FinalTestHelper/BinarySearchTree.hpp
+iostream
+-
+vector
+-
+StackArray.hpp
+/home/sanerin/GitHub/Cpp_Progs/2 semester/8.1 FinalTestHelper/StackArray.hpp
+QueueArray.hpp
+/home/sanerin/GitHub/Cpp_Progs/2 semester/8.1 FinalTestHelper/QueueArray.hpp
+
+/home/sanerin/GitHub/Cpp_Progs/2 semester/8.1 FinalTestHelper/Queue.hpp
+
+/home/sanerin/GitHub/Cpp_Progs/2 semester/8.1 FinalTestHelper/QueueArray.hpp
+Queue.hpp
+/home/sanerin/GitHub/Cpp_Progs/2 semester/8.1 FinalTestHelper/Queue.hpp
+QueueOverflow.hpp
+/home/sanerin/GitHub/Cpp_Progs/2 semester/8.1 FinalTestHelper/QueueOverflow.hpp
+QueueUnderflow.hpp
+/home/sanerin/GitHub/Cpp_Progs/2 semester/8.1 FinalTestHelper/QueueUnderflow.hpp
+WrongQueueSize.hpp
+/home/sanerin/GitHub/Cpp_Progs/2 semester/8.1 FinalTestHelper/WrongQueueSize.hpp
+
+/home/sanerin/GitHub/Cpp_Progs/2 semester/8.1 FinalTestHelper/QueueOverflow.hpp
+exception
+-
+
+/home/sanerin/GitHub/Cpp_Progs/2 semester/8.1 FinalTestHelper/QueueUnderflow.hpp
+exception
+-
+
+/home/sanerin/GitHub/Cpp_Progs/2 semester/8.1 FinalTestHelper/Stack.hpp
+
+/home/sanerin/GitHub/Cpp_Progs/2 semester/8.1 FinalTestHelper/StackArray.hpp
+memory
+-
+Stack.hpp
+/home/sanerin/GitHub/Cpp_Progs/2 semester/8.1 FinalTestHelper/Stack.hpp
+WrongStackSize.hpp
+/home/sanerin/GitHub/Cpp_Progs/2 semester/8.1 FinalTestHelper/WrongStackSize.hpp
+StackOverflow.hpp
+/home/sanerin/GitHub/Cpp_Progs/2 semester/8.1 FinalTestHelper/StackOverflow.hpp
+StackUnderflow.hpp
+/home/sanerin/GitHub/Cpp_Progs/2 semester/8.1 FinalTestHelper/StackUnderflow.hpp
+
+/home/sanerin/GitHub/Cpp_Progs/2 semester/8.1 FinalTestHelper/StackOverflow.hpp
+exception
+-
+
+/home/sanerin/GitHub/Cpp_Progs/2 semester/8.1 FinalTestHelper/StackUnderflow.hpp
+exception
+-
+
+/home/sanerin/GitHub/Cpp_Progs/2 semester/8.1 FinalTestHelper/WrongQueueSize.hpp
+exception
+-
+
+/home/sanerin/GitHub/Cpp_Progs/2 semester/8.1 FinalTestHelper/WrongStackSize.hpp
+exception
+-
+
+/home/sanerin/GitHub/Cpp_Progs/2 semester/8.1 FinalTestHelper/main.cpp
+iostream
+-
+BinarySearchTree.hpp
+/home/sanerin/GitHub/Cpp_Progs/2 semester/8.1 FinalTestHelper/BinarySearchTree.hpp
+

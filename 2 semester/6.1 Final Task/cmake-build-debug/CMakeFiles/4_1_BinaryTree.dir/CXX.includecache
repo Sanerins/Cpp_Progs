@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/sanerin/GitHub/Cpp_Progs/2 semester/6.1 Final Task/BinarySearchTree.hpp
+iostream
+-
+algorithm
+-
+string
+-
+map
+-
+
+/home/sanerin/GitHub/Cpp_Progs/2 semester/6.1 Final Task/FrequencyBook.hpp
+iostream
+-
+map
+-
+string
+-
+BinarySearchTree.hpp
+/home/sanerin/GitHub/Cpp_Progs/2 semester/6.1 Final Task/BinarySearchTree.hpp
+
+/home/sanerin/GitHub/Cpp_Progs/2 semester/6.1 Final Task/main.cpp
+iostream
+-
+fstream
+-
+map
+-
+FrequencyBook.hpp
+/home/sanerin/GitHub/Cpp_Progs/2 semester/6.1 Final Task/FrequencyBook.hpp
+

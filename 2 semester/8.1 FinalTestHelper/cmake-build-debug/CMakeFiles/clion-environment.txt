@@ -1,0 +1,3 @@
+ToolSet: 1.0 (local)Options: 
+
+Options:-DCMAKE_CXX_FLAGS=-Wall -Wextra -Werror -Wno-missing-field-initializers -Wold-style-cast
