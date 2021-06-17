@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wall -Wextra -Werror -Wno-missing-field-initializers -Wold-style-cast -g CMakeFiles/9_1_DumbAI.dir/main.cpp.o CMakeFiles/9_1_DumbAI.dir/Vocabulary.cpp.o -o 9_1_DumbAI 

@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/sanerin/GitHub/Cpp_Progs/2 semester/9.1 DumbAI/Vocabulary.hpp
+map
+-
+iostream
+-
+string
+-
+
+/home/sanerin/GitHub/Cpp_Progs/2 semester/9.1 DumbAI/main.cpp
+iostream
+-
+fstream
+-
+map
+-
+ctime
+-
+Vocabulary.hpp
+/home/sanerin/GitHub/Cpp_Progs/2 semester/9.1 DumbAI/Vocabulary.hpp
+
